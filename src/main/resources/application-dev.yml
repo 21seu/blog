@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/blog?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+logging:
+  level: # 日志级别设置
+    root: info
+    com.ftj: debug
+  file: log/blog-dev.log #日志大小超过10M，默认切分
+server:
+  port: 8080

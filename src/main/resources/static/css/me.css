@@ -111,7 +111,7 @@ body {
     margin-top: 2em !important;
 }
 
-.m-margin-bottom-small{
+.m-margin-bottom-small {
     margin-bottom: 0.5em !important;
 }
 
@@ -148,6 +148,12 @@ body {
     margin: auto !important;
 }
 
+/*------------- shadow -------------------*/
+.m-shadow-small {
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
 /*------------- color -------------------*/
 .m-black {
     color: #333 !important;
@@ -171,7 +177,12 @@ body {
         padding-right: 0 !important;
     }
 
-    .m-mobile-wide{
+    .m-padded-lr-clear {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .m-mobile-wide {
         width: 100% !important;
     }
 }

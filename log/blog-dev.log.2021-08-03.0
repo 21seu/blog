@@ -1,0 +1,60 @@
+2021-08-03 23:17:19.630  INFO 9532 --- [restartedMain] com.ftj.BlogApplication                  : Starting BlogApplication on LAPTOP-8OTNEP4V with PID 9532 (started by ftj in D:\jetbrains\IntelliJ IDEA 2020.1\workspace\blog)
+2021-08-03 23:17:19.646 DEBUG 9532 --- [restartedMain] com.ftj.BlogApplication                  : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-08-03 23:17:19.646  INFO 9532 --- [restartedMain] com.ftj.BlogApplication                  : The following profiles are active: dev
+2021-08-03 23:17:19.677  INFO 9532 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-03 23:17:19.677  INFO 9532 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-03 23:17:20.224  INFO 9532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-03 23:17:20.240  INFO 9532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0ms. Found 0 repository interfaces.
+2021-08-03 23:17:20.536  INFO 9532 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$98327a03] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-03 23:17:21.583  INFO 9532 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-03 23:17:21.599  INFO 9532 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-03 23:17:21.599  INFO 9532 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-03 23:17:21.599  INFO 9532 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2021-08-03 23:17:21.599  INFO 9532 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-08-03 23:17:21.599  INFO 9532 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-08-03 23:17:21.614  INFO 9532 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2021-08-03 23:17:21.692  INFO 9532 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-03 23:17:21.692  INFO 9532 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2015 ms
+2021-08-03 23:17:21.911  INFO 9532 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-03 23:17:22.224  INFO 9532 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-03 23:17:22.270  INFO 9532 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-08-03 23:17:22.333  INFO 9532 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-08-03 23:17:22.333  INFO 9532 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-08-03 23:17:22.473  INFO 9532 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-08-03 23:17:22.598  INFO 9532 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-03 23:17:22.786  INFO 9532 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-03 23:17:22.848  INFO 9532 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-03 23:17:23.161  INFO 9532 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-03 23:17:23.208  WARN 9532 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-03 23:17:23.333  INFO 9532 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-08-03 23:17:23.504  INFO 9532 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-03 23:17:23.520  INFO 9532 --- [restartedMain] com.ftj.BlogApplication                  : Started BlogApplication in 4.441 seconds (JVM running for 5.797)
+2021-08-03 23:17:34.492  INFO 9532 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-03 23:17:34.492  INFO 9532 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-03 23:17:34.505  INFO 9532 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2021-08-03 23:17:34.585  INFO 9532 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.index', args=[]}
+2021-08-03 23:17:34.588  INFO 9532 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-03 23:17:34.589  INFO 9532 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Result : index
+2021-08-03 23:19:49.852  INFO 9532 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.index', args=[]}
+2021-08-03 23:19:49.853  INFO 9532 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-03 23:19:49.853  INFO 9532 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : Result : index
+2021-08-03 23:20:43.044  INFO 9532 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.index', args=[]}
+2021-08-03 23:20:43.044  INFO 9532 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-03 23:20:43.044  INFO 9532 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : Result : index
+2021-08-03 23:20:51.892  INFO 9532 --- [http-nio-8080-exec-4] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.index', args=[]}
+2021-08-03 23:20:51.892  INFO 9532 --- [http-nio-8080-exec-4] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-03 23:20:51.892  INFO 9532 --- [http-nio-8080-exec-4] com.ftj.aspect.LogAspect                 : Result : index
+2021-08-03 23:21:23.258  INFO 9532 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.index', args=[]}
+2021-08-03 23:21:23.258  INFO 9532 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-03 23:21:23.258  INFO 9532 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : Result : index
+2021-08-03 23:21:54.335  INFO 9532 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.index', args=[]}
+2021-08-03 23:21:54.335  INFO 9532 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-03 23:21:54.335  INFO 9532 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : Result : index
+2021-08-03 23:22:03.168  INFO 9532 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.index', args=[]}
+2021-08-03 23:22:03.169  INFO 9532 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-03 23:22:03.169  INFO 9532 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : Result : index
+2021-08-03 23:22:13.483  INFO 9532 --- [http-nio-8080-exec-8] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.index', args=[]}
+2021-08-03 23:22:13.484  INFO 9532 --- [http-nio-8080-exec-8] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-03 23:22:13.484  INFO 9532 --- [http-nio-8080-exec-8] com.ftj.aspect.LogAspect                 : Result : index

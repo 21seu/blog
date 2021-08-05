@@ -12,6 +12,10 @@ body {
     margin-left: -100px;
 }
 
+.m-padded {
+    padding: 1em !important; /*1em = 14px*/
+}
+
 .m-padded-mini {
     padding-top: 0.2em !important; /*1em = 14px*/
     padding-bottom: 0.2em !important;
@@ -152,6 +156,17 @@ body {
 .m-shadow-small {
     -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+/*------------- position -------------------*/
+.m-fixed {
+    position: fixed !important;
+    z-index: 10 !important;
+}
+
+.m-right-bottom {
+    bottom: 0 !important;
+    right: 0 !important;
 }
 
 /*------------- color -------------------*/

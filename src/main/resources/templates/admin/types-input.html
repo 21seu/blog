@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <!--移动端的预览设置-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>博客管理</title>
+    <title>分类新增</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css">
     <link rel="stylesheet" href="../../static/css/me.css">
 </head>
 <body>
@@ -21,7 +22,7 @@
                 <div class="ui dropdown item">
                     <div class="text">
                         <img src="https://unsplash.it/60/60?image=1005" alt="" class="ui avatar image">
-                        [[${session.user.nickname}]]
+                        冯艇钧
                     </div>
                     <i class="dropdown icon"></i>
                     <div class="menu">
@@ -35,22 +36,44 @@
         <i class="sidebar icon"></i>
     </a>
 </nav>
-
+<div class="ui attached pointing menu">
+    <div class="ui container">
+        <div class="right menu">
+            <a th:href="@{/admin/types/input}" class="teal active item">新增</a>
+            <a th:href="@{/admin/types}" class="item">列表</a>
+        </div>
+    </div>
+</div>
 
 <!--中间内容-->
 <div class="m-container-small m-padded-td-big">
     <div class="ui container">
-        <div class="ui success large message">
-            <h3>Hi,</h3>
-            <p>[[${session.user.nickname}]]，欢迎登录！</p>
-        </div>
+        <form action="#" method="post" th:object="${type}"
+              th:action="*{id} ==null ? @{/admin/types} : @{/admin/types/{id}(id=*{id})}" class="ui form">
+            <input type="hidden" name="id" th:value="*{id}" />
+            <div class="required field">
+                <div class="ui left labeled input">
+                    <label class="ui teal basic label">名称</label>
+                    <input type="text" name="name" placeholder="分类名称" th:value="*{name}"/>
+                </div>
+            </div>
 
-        <img src="https://unsplash.it/1000/400?image=1008" alt="" class="ui rounded bordered fluid image">
+            <div class="ui error message"></div>
+
+            <!--/*/<div class="ui negative message" th:if="${#fields.hasErrors('name')}">
+                <i class="close icon"></i>
+                <div class="header">验证失败</div>
+                <p th:errors="*{name}">提交信息不符合规则</p>
+            </div>/*/-->
+
+            <div class="ui right aligned container">
+                <button class="ui button" type="button" onclick="window.history.go(-1)">返回</button>
+                <button class="ui teal submit button">提交</button>
+            </div>
+        </form>
     </div>
 </div>
-<br><br>
-
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
 <!--底部footer-->
 <footer th:replace="admin/_fragments :: footer" class="ui inverted vertical segment m-padded-td-massive">
     <div class="ui center aligned container">
@@ -94,12 +117,25 @@
 <!--/*/</th:block>/*/-->
 
 <script>
+
     $('.menu.toggle').click(function () {
         $('.m-item').toggleClass('m-mobile-hide');
     });
 
     $('.ui.dropdown').dropdown({
         on: 'hover'
+    });
+
+    $('.ui.form').form({
+        fields: {
+            name: {
+                identifier: 'name',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入分类名称'
+                }]
+            }
+        }
     });
 </script>
 </body>

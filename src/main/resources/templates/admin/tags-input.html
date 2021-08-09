@@ -11,7 +11,7 @@
 </head>
 <body>
 <!--导航-->
-<nav th:replace="admin/_fragments :: menu(2)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+<nav th:replace="admin/_fragments :: menu(3)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
             <h2 class="ui teal header item">管理后台</h2>
@@ -49,12 +49,12 @@
 <div class="m-container-small m-padded-td-big">
     <div class="ui container">
         <form action="#" method="post" th:object="${tag}"
-              th:action="*{id} ==null ? @{/admin/tags} : @{/admin/tags/{id}(id=*{id})}" class="ui form">
+              th:action="*{id} == null ? @{/admin/tags} : @{/admin/tags/{id}(id=*{id})}" class="ui form">
             <input type="hidden" name="id" th:value="*{id}" />
             <div class="required field">
                 <div class="ui left labeled input">
                     <label class="ui teal basic label">名称</label>
-                    <input type="text" name="name" placeholder="分类名称" th:value="*{name}"/>
+                    <input type="text" name="name" placeholder="标签名称" th:value="*{name}"/>
                 </div>
             </div>
 

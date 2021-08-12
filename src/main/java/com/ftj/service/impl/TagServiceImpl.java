@@ -11,6 +11,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * Created by fengtj on 2021/8/9 23:18
  */
@@ -33,6 +35,11 @@ public class TagServiceImpl implements TagService {
     @Override
     public Tag getTagByName(String name) {
         return tagRepository.findByName(name);
+    }
+
+    @Override
+    public List<Tag> listTag() {
+        return tagRepository.findAll();
     }
 
     @Override

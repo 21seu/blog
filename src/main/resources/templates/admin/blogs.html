@@ -55,12 +55,13 @@
                 </div>
                 <div class="field">
                     <div class="ui selection dropdown">
-                        <input type="text" class="hidden" name="typeId"/>
+                        <input type="hidden" name="typeId">
                         <i class="dropdown icon"></i>
                         <div class="default text">分类</div>
                         <div class="menu">
-                            <div data-value="1" class="item">错误日志</div>
-                            <div data-value="2" class="item">开发者手册</div>
+                            <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}"
+                                 th:text="${type.name}">我的故事
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,7 +117,8 @@
                             <a class="item" onclick="page(this)" th:attr="data-page=${page.number}+1"
                                th:unless="${page.last}">下一页</a>
                         </div>
-                        <a href="#" class="ui mini right floated teal basic button">新增</a>
+                        <a href="#" th:href="@{/admin/blogs/input}"
+                           class="ui mini right floated teal basic button">新增</a>
                     </th>
                 </tr>
                 </tfoot>
@@ -192,7 +194,7 @@
             typeId: $("[name='typeId']").val(),
             recommend: $("[name='recommend']").prop('checked'),
             page: $("[name='page']").val()
-        })
+        });
     }
 </script>
 </body>

@@ -38,8 +38,8 @@
 <div class="ui attached pointing menu">
     <div class="ui container">
         <div class="right menu">
-            <a href="#" class="item">发布</a>
-            <a href="#" class="teal active item">列表</a>
+            <a href="#" th:href="@{/admin/blogs/input}" class="item">发布</a>
+            <a href="#" th:href="@{/admin/blogs}" class="teal active item">列表</a>
         </div>
     </div>
 </div>
@@ -91,6 +91,7 @@
                     <th>标题</th>
                     <th>类型</th>
                     <th>推荐</th>
+                    <th>是否发布</th>
                     <th>更新时间</th>
                     <th>操作</th>
                 </tr>
@@ -104,15 +105,15 @@
                                                              class="ui teal label"></a></td>
                     <td th:if="${blog.recommend == false}"><a th:text="${blog.recommend} ? '是' : '否'"
                                                               class="ui grey label"></a></td>
-                    <td th:if="${blog.published == true}"><a th:text="${blog.published} ? '草稿' : '发布'"
+                    <td th:if="${blog.published == true}"><a th:text="${blog.published} ? '发布' : '草稿'"
                                                              class="ui red label">草稿</a></td>
-                    <td th:if="${blog.published == false}"><a th:text="${blog.published} ? '草稿' : '发布'"
+                    <td th:if="${blog.published == false}"><a th:text="${blog.published} ? '发布' : '草稿'"
                                                               class="ui green label">草稿</a></td>
                     <td th:text="${blog.updateTime}">2021-08-05 22：04</td>
                     <td>
                         <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}"
                            class="ui mini teal basic button">编辑</a>
-                        <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}"
+                        <a href="#" th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}"
                            class="ui mini red basic button">删除</a>
                     </td>
                 </tr>

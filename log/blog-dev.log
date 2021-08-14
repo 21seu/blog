@@ -525,3 +525,300 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-08-14 18:14:26.198  INFO 3708 --- [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-08-14 18:14:26.198  INFO 3708 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
 2021-08-14 18:14:26.214  INFO 3708 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-08-14 18:14:29.259  INFO 17868 --- [restartedMain] com.ftj.BlogApplication                  : Starting BlogApplication on LAPTOP-8OTNEP4V with PID 17868 (started by ftj in D:\jetbrains\IntelliJ IDEA 2020.1\workspace\blog)
+2021-08-14 18:14:29.259 DEBUG 17868 --- [restartedMain] com.ftj.BlogApplication                  : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-08-14 18:14:29.259  INFO 17868 --- [restartedMain] com.ftj.BlogApplication                  : The following profiles are active: dev
+2021-08-14 18:14:29.337  INFO 17868 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-14 18:14:29.337  INFO 17868 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-14 18:14:29.946  INFO 17868 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-14 18:14:30.008  INFO 17868 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 4 repository interfaces.
+2021-08-14 18:14:30.133  WARN 17868 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ftj]' package. Please check your configuration.
+2021-08-14 18:14:30.399  INFO 17868 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$62a6a278] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-14 18:14:31.086  INFO 17868 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-14 18:14:31.149  INFO 17868 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-14 18:14:31.149  INFO 17868 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-14 18:14:31.164  INFO 17868 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2021-08-14 18:14:31.164  INFO 17868 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-08-14 18:14:31.164  INFO 17868 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-08-14 18:14:31.164  INFO 17868 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2021-08-14 18:14:31.227  INFO 17868 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-14 18:14:31.227  INFO 17868 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1890 ms
+2021-08-14 18:14:31.383  INFO 17868 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-14 18:14:31.711  INFO 17868 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-14 18:14:31.758  INFO 17868 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-08-14 18:14:31.805  INFO 17868 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-08-14 18:14:31.805  INFO 17868 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-08-14 18:14:31.930  INFO 17868 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-08-14 18:14:32.055  INFO 17868 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-14 18:14:33.198  INFO 17868 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-14 18:14:33.260  INFO 17868 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-14 18:14:33.994  INFO 17868 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-14 18:14:34.197  WARN 17868 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-14 18:14:34.322  INFO 17868 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-08-14 18:14:34.588  INFO 17868 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-14 18:14:34.588  INFO 17868 --- [restartedMain] com.ftj.BlogApplication                  : Started BlogApplication in 5.845 seconds (JVM running for 6.66)
+2021-08-14 18:35:00.155  INFO 17868 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-14 18:35:00.156  INFO 17868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-14 18:35:00.169  INFO 17868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2021-08-14 18:35:04.039  INFO 17868 --- [http-nio-8080-exec-5] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-08-14 18:36:00.456 ERROR 17868 --- [http-nio-8080-exec-4] c.f.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/admin/blogsSave, Exception : {}
+
+java.lang.NumberFormatException: For input string: "招聘"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.<init>(Long.java:965)
+	at com.ftj.util.ListUtils.convertToList(ListUtils.java:18)
+	at com.ftj.service.impl.TagServiceImpl.listTag(TagServiceImpl.java:57)
+	at com.ftj.service.impl.TagServiceImpl$$FastClassBySpringCGLIB$$f3f5171.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.ftj.service.impl.TagServiceImpl$$EnhancerBySpringCGLIB$$6a9322a7.listTag(<generated>)
+	at com.ftj.web.admin.BlogController.post(BlogController.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-08-14 18:36:00.457  WARN 17868 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NumberFormatException: For input string: "招聘"]
+2021-08-14 18:40:22.186  INFO 17868 --- [Thread-12] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-14 18:40:22.186  INFO 17868 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-14 18:40:22.202  INFO 17868 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-14 18:40:22.202  INFO 17868 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-14 18:40:22.667  INFO 17868 --- [restartedMain] com.ftj.BlogApplication                  : Starting BlogApplication on LAPTOP-8OTNEP4V with PID 17868 (started by ftj in D:\jetbrains\IntelliJ IDEA 2020.1\workspace\blog)
+2021-08-14 18:40:22.667 DEBUG 17868 --- [restartedMain] com.ftj.BlogApplication                  : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-08-14 18:40:22.667  INFO 17868 --- [restartedMain] com.ftj.BlogApplication                  : The following profiles are active: dev
+2021-08-14 18:40:23.075  INFO 17868 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-14 18:40:23.104  INFO 17868 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 4 repository interfaces.
+2021-08-14 18:40:23.158  WARN 17868 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ftj]' package. Please check your configuration.
+2021-08-14 18:40:23.194  INFO 17868 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$62a6a278] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-14 18:40:23.392  INFO 17868 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-14 18:40:23.394  INFO 17868 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-14 18:40:23.394  INFO 17868 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-14 18:40:23.395  INFO 17868 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2021-08-14 18:40:23.395  INFO 17868 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-08-14 18:40:23.395  INFO 17868 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-08-14 18:40:23.396  INFO 17868 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2021-08-14 18:40:23.420  INFO 17868 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-14 18:40:23.420  INFO 17868 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 750 ms
+2021-08-14 18:40:23.509  INFO 17868 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-08-14 18:40:23.518  INFO 17868 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-08-14 18:40:23.527  INFO 17868 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-08-14 18:40:23.549  INFO 17868 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-14 18:40:24.105  INFO 17868 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-14 18:40:24.155  INFO 17868 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-14 18:40:24.786  INFO 17868 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-14 18:40:24.813  WARN 17868 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-14 18:40:24.930  INFO 17868 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-08-14 18:40:25.158  INFO 17868 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-14 18:40:25.159  INFO 17868 --- [restartedMain] com.ftj.BlogApplication                  : Started BlogApplication in 2.55 seconds (JVM running for 1557.227)
+2021-08-14 18:40:25.161  INFO 17868 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-08-14 18:40:25.229  INFO 17868 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-14 18:40:25.230  INFO 17868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-14 18:40:25.245  INFO 17868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2021-08-14 18:40:30.063  INFO 17868 --- [http-nio-8080-exec-4] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-08-14 18:40:42.754  INFO 17868 --- [Thread-28] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-14 18:40:42.754  INFO 17868 --- [Thread-28] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-14 18:40:42.754  INFO 17868 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-08-14 18:40:42.754  INFO 17868 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-08-14 18:44:48.901  INFO 7828 --- [restartedMain] com.ftj.BlogApplication                  : Starting BlogApplication on LAPTOP-8OTNEP4V with PID 7828 (started by ftj in D:\jetbrains\IntelliJ IDEA 2020.1\workspace\blog)
+2021-08-14 18:44:48.903 DEBUG 7828 --- [restartedMain] com.ftj.BlogApplication                  : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-08-14 18:44:48.903  INFO 7828 --- [restartedMain] com.ftj.BlogApplication                  : The following profiles are active: dev
+2021-08-14 18:44:48.978  INFO 7828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-14 18:44:48.978  INFO 7828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-14 18:44:49.531  INFO 7828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-14 18:44:49.591  INFO 7828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55ms. Found 4 repository interfaces.
+2021-08-14 18:44:49.670  WARN 7828 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ftj]' package. Please check your configuration.
+2021-08-14 18:44:49.846  INFO 7828 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$223aa86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-14 18:44:50.227  INFO 7828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-14 18:44:50.242  INFO 7828 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-14 18:44:50.243  INFO 7828 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-14 18:44:50.248  INFO 7828 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2021-08-14 18:44:50.249  INFO 7828 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-08-14 18:44:50.249  INFO 7828 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-08-14 18:44:50.252  INFO 7828 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2021-08-14 18:44:50.355  INFO 7828 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-14 18:44:50.355  INFO 7828 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1377 ms
+2021-08-14 18:44:50.479  INFO 7828 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-14 18:44:50.775  INFO 7828 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-14 18:44:50.822  INFO 7828 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-08-14 18:44:50.853  INFO 7828 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-08-14 18:44:50.853  INFO 7828 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-08-14 18:44:50.947  INFO 7828 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-08-14 18:44:51.040  INFO 7828 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-14 18:44:52.056  INFO 7828 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-14 18:44:52.103  INFO 7828 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-14 18:44:52.712  INFO 7828 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-14 18:44:52.743  WARN 7828 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-14 18:44:53.024  INFO 7828 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-08-14 18:44:53.243  INFO 7828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-14 18:44:53.243  INFO 7828 --- [restartedMain] com.ftj.BlogApplication                  : Started BlogApplication in 4.709 seconds (JVM running for 5.329)
+2021-08-14 18:45:02.807  INFO 7828 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-14 18:45:02.807  INFO 7828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-14 18:45:02.818  INFO 7828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2021-08-14 18:45:06.934  INFO 7828 --- [http-nio-8080-exec-4] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-08-14 18:48:16.829  INFO 7828 --- [Thread-11] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-14 18:48:16.830  INFO 7828 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-14 18:48:16.832  INFO 7828 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-14 18:48:16.835  INFO 7828 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-14 18:48:17.219  INFO 7828 --- [restartedMain] com.ftj.BlogApplication                  : Starting BlogApplication on LAPTOP-8OTNEP4V with PID 7828 (started by ftj in D:\jetbrains\IntelliJ IDEA 2020.1\workspace\blog)
+2021-08-14 18:48:17.219 DEBUG 7828 --- [restartedMain] com.ftj.BlogApplication                  : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-08-14 18:48:17.219  INFO 7828 --- [restartedMain] com.ftj.BlogApplication                  : The following profiles are active: dev
+2021-08-14 18:48:17.507  INFO 7828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-14 18:48:17.539  INFO 7828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32ms. Found 4 repository interfaces.
+2021-08-14 18:48:17.585  WARN 7828 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ftj]' package. Please check your configuration.
+2021-08-14 18:48:17.617  INFO 7828 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$223aa86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-14 18:48:17.742  INFO 7828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-14 18:48:17.757  INFO 7828 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-14 18:48:17.757  INFO 7828 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-14 18:48:17.757  INFO 7828 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2021-08-14 18:48:17.757  INFO 7828 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-08-14 18:48:17.757  INFO 7828 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-08-14 18:48:17.757  INFO 7828 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2021-08-14 18:48:17.773  INFO 7828 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-14 18:48:17.773  INFO 7828 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 538 ms
+2021-08-14 18:48:17.840  INFO 7828 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-08-14 18:48:17.840  INFO 7828 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-08-14 18:48:17.856  INFO 7828 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-08-14 18:48:17.871  INFO 7828 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-14 18:48:18.440  INFO 7828 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-14 18:48:18.479  INFO 7828 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-14 18:48:18.932  INFO 7828 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-14 18:48:18.952  WARN 7828 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-14 18:48:19.032  INFO 7828 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-08-14 18:48:19.184  INFO 7828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-14 18:48:19.184  INFO 7828 --- [restartedMain] com.ftj.BlogApplication                  : Started BlogApplication in 2.012 seconds (JVM running for 211.265)
+2021-08-14 18:48:19.186  INFO 7828 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-08-14 18:48:19.285  INFO 7828 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-14 18:48:19.286  INFO 7828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-14 18:48:19.292  INFO 7828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2021-08-14 18:48:23.173  INFO 7828 --- [http-nio-8080-exec-5] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-08-14 18:48:35.344  INFO 4780 --- [restartedMain] com.ftj.BlogApplication                  : Starting BlogApplication on LAPTOP-8OTNEP4V with PID 4780 (started by ftj in D:\jetbrains\IntelliJ IDEA 2020.1\workspace\blog)
+2021-08-14 18:48:35.360 DEBUG 4780 --- [restartedMain] com.ftj.BlogApplication                  : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-08-14 18:48:35.360  INFO 4780 --- [restartedMain] com.ftj.BlogApplication                  : The following profiles are active: dev
+2021-08-14 18:48:35.438  INFO 4780 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-14 18:48:35.438  INFO 4780 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-14 18:48:35.969  INFO 4780 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-14 18:48:36.016  INFO 4780 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 4 repository interfaces.
+2021-08-14 18:48:36.110  WARN 4780 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ftj]' package. Please check your configuration.
+2021-08-14 18:48:36.266  INFO 4780 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6683b318] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-14 18:48:36.610  INFO 4780 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-14 18:48:36.625  INFO 4780 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-14 18:48:36.625  INFO 4780 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-14 18:48:36.641  INFO 4780 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2021-08-14 18:48:36.641  INFO 4780 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-08-14 18:48:36.641  INFO 4780 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-08-14 18:48:36.641  INFO 4780 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2021-08-14 18:48:36.750  INFO 4780 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-14 18:48:36.750  INFO 4780 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1312 ms
+2021-08-14 18:48:36.875  INFO 4780 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-14 18:48:37.188  INFO 4780 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-14 18:48:37.219  INFO 4780 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-08-14 18:48:37.250  INFO 4780 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-08-14 18:48:37.250  INFO 4780 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-08-14 18:48:37.328  INFO 4780 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-08-14 18:48:37.438  INFO 4780 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-14 18:48:38.393  INFO 4780 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-14 18:48:38.439  INFO 4780 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-14 18:48:39.064  INFO 4780 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-14 18:48:39.096  WARN 4780 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-14 18:48:39.345  INFO 4780 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-08-14 18:48:39.549  INFO 4780 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-14 18:48:39.564  INFO 4780 --- [restartedMain] com.ftj.BlogApplication                  : Started BlogApplication in 4.563 seconds (JVM running for 5.23)
+2021-08-14 18:48:46.786  INFO 4780 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-14 18:48:46.786  INFO 4780 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-14 18:48:46.798  INFO 4780 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2021-08-14 18:48:50.631  INFO 4780 --- [http-nio-8080-exec-8] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-08-14 18:55:09.529  INFO 820 --- [restartedMain] com.ftj.BlogApplication                  : Starting BlogApplication on LAPTOP-8OTNEP4V with PID 820 (started by ftj in D:\jetbrains\IntelliJ IDEA 2020.1\workspace\blog)
+2021-08-14 18:55:09.531 DEBUG 820 --- [restartedMain] com.ftj.BlogApplication                  : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-08-14 18:55:09.531  INFO 820 --- [restartedMain] com.ftj.BlogApplication                  : The following profiles are active: dev
+2021-08-14 18:55:09.598  INFO 820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-14 18:55:09.598  INFO 820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-14 18:55:10.106  INFO 820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-14 18:55:10.162  INFO 820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51ms. Found 4 repository interfaces.
+2021-08-14 18:55:10.247  WARN 820 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ftj]' package. Please check your configuration.
+2021-08-14 18:55:10.417  INFO 820 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fe605eb1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-14 18:55:10.770  INFO 820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-14 18:55:10.787  INFO 820 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-14 18:55:10.787  INFO 820 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-14 18:55:10.792  INFO 820 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2021-08-14 18:55:10.792  INFO 820 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-08-14 18:55:10.792  INFO 820 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-08-14 18:55:10.793  INFO 820 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2021-08-14 18:55:10.897  INFO 820 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-14 18:55:10.897  INFO 820 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1298 ms
+2021-08-14 18:55:11.022  INFO 820 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-14 18:55:11.335  INFO 820 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-14 18:55:11.369  INFO 820 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-08-14 18:55:11.406  INFO 820 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-08-14 18:55:11.407  INFO 820 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-08-14 18:55:11.488  INFO 820 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-08-14 18:55:11.601  INFO 820 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-14 18:55:12.537  INFO 820 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-14 18:55:12.586  INFO 820 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-14 18:55:13.240  INFO 820 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-14 18:55:13.280  WARN 820 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-14 18:55:13.588  INFO 820 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-08-14 18:55:13.822  INFO 820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-14 18:55:13.824  INFO 820 --- [restartedMain] com.ftj.BlogApplication                  : Started BlogApplication in 4.658 seconds (JVM running for 5.297)

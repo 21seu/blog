@@ -89,6 +89,8 @@ public class Blog {
     @Transient
     private String tagIds;
 
+    private String description;
+
     public void init() {
         this.tagIds = tagsToIds(this.getTags());
     }

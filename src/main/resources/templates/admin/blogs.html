@@ -54,15 +54,18 @@
                     <input type="text" name="title" placeholder="标题"/>
                 </div>
                 <div class="field">
-                    <div class="ui selection dropdown">
-                        <input type="hidden" name="typeId">
-                        <i class="dropdown icon"></i>
-                        <div class="default text">分类</div>
-                        <div class="menu">
-                            <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}"
-                                 th:text="${type.name}">我的故事
+                    <div class="ui labeled action input">
+                        <div class="ui type selection dropdown">
+                            <input type="hidden" name="typeId">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">分类</div>
+                            <div class="menu">
+                                <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}"
+                                     th:text="${type.name}">我的故事
+                                </div>
                             </div>
                         </div>
+                        <button id="clear-btn" class="ui compact button">clear</button>
                     </div>
                 </div>
 
@@ -93,11 +96,18 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr th:each="blog,iterStat : ${page.content}">
+                <tr align="center" th:each="blog,iterStat : ${page.content}">
                     <td th:text="${iterStat.count}">1</td>
                     <td th:text="${blog.title}">刻意联系清单</td>
                     <td th:text="${blog.type.name}">认知升级</td>
-                    <td th:text="${blog.recommend} ? '是' : '否'">是</td>
+                    <td th:if="${blog.recommend == true}"><a th:text="${blog.recommend} ? '是' : '否'"
+                                                             class="ui teal label"></a></td>
+                    <td th:if="${blog.recommend == false}"><a th:text="${blog.recommend} ? '是' : '否'"
+                                                              class="ui grey label"></a></td>
+                    <td th:if="${blog.published == true}"><a th:text="${blog.published} ? '草稿' : '发布'"
+                                                             class="ui red label">草稿</a></td>
+                    <td th:if="${blog.published == false}"><a th:text="${blog.published} ? '草稿' : '发布'"
+                                                              class="ui green label">草稿</a></td>
                     <td th:text="${blog.updateTime}">2021-08-05 22：04</td>
                     <td>
                         <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}"
@@ -110,7 +120,7 @@
 
                 <tfoot>
                 <tr>
-                    <th colspan="6">
+                    <th colspan="7">
                         <div class="ui mini pagination menu" th:if="${page.totalPages} > 1">
                             <a class="item" onclick="page(this)" th:attr="data-page=${page.number}-1"
                                th:unless="${page.first}">上一页</a>
@@ -123,6 +133,14 @@
                 </tr>
                 </tfoot>
             </table>
+
+
+            <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
+                <i class="close icon"></i>
+                <div class="header">提示：</div>
+                <p th:text="${message}">恭喜，操作成功！</p>
+            </div>
+
         </div>
 
     </div>
@@ -179,12 +197,27 @@
         on: 'hover'
     });
 
+    //消息提示关闭初始化
+    $('.message .close')
+        .on('click', function () {
+            $(this)
+                .closest('.message')
+                .transition('fade');
+        });
+
+    $('#clear-btn')
+        .on('click', function () {
+            $('.ui.type.dropdown')
+                .dropdown('clear');
+        })
+
     function page(obj) {
         $("[name='page']").val($(obj).data("page"));
         loadData();
     }
 
     $("#search-btn").click(function () {
+        $("[name='page']").val(0);
         loadData();
     })
 

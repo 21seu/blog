@@ -5,11 +5,13 @@ import com.ftj.dao.TagRepository;
 import com.ftj.pojo.Tag;
 import com.ftj.pojo.Type;
 import com.ftj.service.TagService;
+import com.ftj.util.ListUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -51,6 +53,12 @@ public class TagServiceImpl implements TagService {
     }
 
     @Override
+    public List<Tag> listTag(String ids) { //1,2,3
+        return tagRepository.findAllById(ListUtils.convertToList(ids));
+    }
+
+    @Transactional
+    @Override
     public void deleteTag(Long id) {
         tagRepository.deleteById(id);
     }
@@ -59,4 +67,6 @@ public class TagServiceImpl implements TagService {
     public Page<Tag> listTags(Pageable pageable) {
         return tagRepository.findAll(pageable);
     }
+
+
 }

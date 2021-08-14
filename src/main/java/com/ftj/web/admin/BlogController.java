@@ -1,6 +1,7 @@
 package com.ftj.web.admin;
 
 import com.ftj.pojo.Blog;
+import com.ftj.pojo.User;
 import com.ftj.service.BlogService;
 import com.ftj.service.TagService;
 import com.ftj.service.TypeService;
@@ -15,6 +16,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import javax.servlet.http.HttpSession;
 
 /**
  * Created by fengtj on 2021/8/7 16:28
@@ -64,4 +68,18 @@ public class BlogController {
     }
 
 
+    @PostMapping("/blogsSave")
+    public String post(Blog blog, RedirectAttributes attributes, HttpSession httpSession) {
+        blog.setUser((User) httpSession.getAttribute("user"));
+        blog.setType(typeService.getType(blog.getType().getId()));
+        blog.setTags(tagService.listTag(blog.getTagIds()));
+
+        Blog b = blogService.saveBlog(blog);
+        if (b == null) {
+            attributes.addFlashAttribute("message", "操作失败");
+        } else {
+            attributes.addFlashAttribute("message", "操作成功");
+        }
+        return "redirect:/admin/blogs";
+    }
 }

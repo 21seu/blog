@@ -27,6 +27,8 @@ public class Blog {
 
     private String title;
 
+    @Basic(fetch = FetchType.LAZY) //当使用到这个大字段的时候才会加载，因为比较耗资源
+    @Lob
     private String content;
 
     /**
@@ -83,4 +85,7 @@ public class Blog {
 
     @OneToMany(mappedBy = "blog")
     private List<Comment> comments = new ArrayList<>();
+
+    @Transient
+    private String tagIds;
 }

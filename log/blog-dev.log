@@ -1,252 +1,555 @@
-2021-08-15 16:35:18.596  INFO 2724 --- [http-nio-8080-exec-3] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/blog/16', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.blog', args=[16, {}]}
-2021-08-15 16:35:18.726  INFO 2724 --- [http-nio-8080-exec-3] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 16:35:18.726  INFO 2724 --- [http-nio-8080-exec-3] com.ftj.aspect.LogAspect                 : Result : blog
-2021-08-15 16:35:19.760  INFO 2724 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/comments/16', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.CommentController.comments', args=[16, {}]}
-2021-08-15 16:35:19.961  INFO 2724 --- [http-nio-8080-exec-5] com.ftj.web.CommentController            : commentList=[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"appreciation":false,"commentabled":false,"comments":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog"},"content":"我也有一个梦想","createTime":1629000093000,"email":"16111@qq.com","id":18,"nickname":"小红","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"有梦想谁都了不起哦","createTime":1629015114000,"email":"1693376841@qq.com","id":23,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.comments[0]"},"replyComment":[]}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"有梦想谁都了不起","createTime":1629015079000,"email":"1693376841@qq.com","id":22,"nickname":"冯艇钧","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"💪","createTime":1629016148000,"email":"1693376841@qq.com","id":24,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.comments[1]"},"replyComment":[]}]},{"$ref":"$[0].blog.comments[0].replyComment[0]"},{"$ref":"$[0].blog.comments[1].replyComment[0]"},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"我是小哥哥","createTime":1629016164000,"email":"1593376841@qq.com","id":25,"nickname":"刘子归","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"我不是🚺","createTime":1629016199000,"email":"1693376841@qq.com","id":26,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.comments[4]"},"replyComment":[]}]},{"$ref":"$[0].blog.comments[4].replyComment[0]"}],"content":"## 1111\r\n\r\nsssssdsfdd","description":"测试下博客内容","firstPicture":"https://unsplash.it/800/450?image=1000","flag":"翻译","id":16,"published":false,"recommend":true,"shareStatement":true,"tags":[{"blogs":[{"$ref":"$[0].blog"}],"id":6,"name":"Mybatis"}],"title":"我有一个梦想","type":{"blogs":[{"$ref":"$[0].blog"}],"id":3,"name":"Java"},"updateTime":1628937922000,"user":{"avatar":"https://unsplash.it/60/60?image=1005","blogs":[{"appreciation":true,"commentabled":true,"comments":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"我也爱你","createTime":1628999385000,"email":"16****@qq.com","id":17,"nickname":"小明","replyComment":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"舔狗滚蛋！","createTime":1629000884000,"email":"16****@qq.com","id":19,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.user.blogs[0].comments[0]"},"replyComment":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"你骂人啊你！","createTime":1629003144000,"email":"16****@qq.com","id":20,"nickname":"小明","parentComment":{"$ref":"$[0].blog.user.blogs[0].comments[0].replyComment[0]"},"replyComment":[]}]}]},{"$ref":"$[0].blog.user.blogs[0].comments[0].replyComment[0]"},{"$ref":"$[0].blog.user.blogs[0].comments[0].replyComment[0].replyComment[0]"},{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"呵呵哒","createTime":1629003174000,"email":"16****@qq.com","id":21,"nickname":"小黄","replyComment":[]}],"content":"## 七夕快乐","description":"测试实施","firstPicture":"https://unsplash.it/800/450?image=1005","flag":"原创","id":15,"published":true,"recommend":true,"shareStatement":true,"tags":[{"blogs":[{"$ref":"$[0].blog.user.blogs[0]"}],"id":8,"name":"RabbitMQ"}],"title":"我爱你","type":{"blogs":[{"$ref":"$[0].blog.user.blogs[0]"}],"id":1,"name":"SpringBoot"},"updateTime":1628937975000,"user":{"$ref":"$[0].blog.user"},"views":1},{"$ref":"$[0].blog"}],"createTime":1628322522000,"email":"1693376841@qq.com","id":1,"nickname":"冯艇钧","password":"e10adc3949ba59abbe56e057f20f883e","type":1,"updateTime":1628322546000,"username":"fengtingjun"},"views":8},"content":"我也有一个梦想","createTime":1629000093000,"email":"16111@qq.com","id":18,"nickname":"小红","replyComment":[{"$ref":"$[0].blog.comments[0].replyComment[0]"}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"有梦想谁都了不起","createTime":1629015079000,"email":"1693376841@qq.com","id":22,"nickname":"冯艇钧","replyComment":[{"$ref":"$[0].blog.comments[1].replyComment[0]"}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"我是小哥哥","createTime":1629016164000,"email":"1593376841@qq.com","id":25,"nickname":"刘子归","replyComment":[{"$ref":"$[0].blog.comments[4].replyComment[0]"}]}]
-2021-08-15 16:35:19.962  INFO 2724 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 16:35:19.962  INFO 2724 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : Result : blog :: commentList
-2021-08-15 16:39:00.322  INFO 2724 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.CommentController.post', args=[Comment(id=null, nickname=冯艇钧, email=1693376841@qq.com, content=顶顶顶顶, avatar=null, createTime=null, blog=Blog(id=16, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentabled=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComment=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComment=[], parentComment=null, adminComment=false), adminComment=false), org.apache.catalina.session.StandardSessionFacade@4e837db7]}
-2021-08-15 16:39:00.354  INFO 2724 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 16:39:00.354  INFO 2724 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : Result : redirect:/comments/16
-2021-08-15 16:39:00.365  INFO 2724 --- [http-nio-8080-exec-7] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/comments/16', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.CommentController.comments', args=[16, {}]}
-2021-08-15 16:39:00.397  INFO 2724 --- [http-nio-8080-exec-7] com.ftj.web.CommentController            : commentList=[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"appreciation":false,"commentabled":false,"comments":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog"},"content":"我也有一个梦想","createTime":1629000093000,"email":"16111@qq.com","id":18,"nickname":"小红","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"有梦想谁都了不起哦","createTime":1629015114000,"email":"1693376841@qq.com","id":23,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.comments[0]"},"replyComment":[]}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"有梦想谁都了不起","createTime":1629015079000,"email":"1693376841@qq.com","id":22,"nickname":"冯艇钧","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"💪","createTime":1629016148000,"email":"1693376841@qq.com","id":24,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.comments[1]"},"replyComment":[]}]},{"$ref":"$[0].blog.comments[0].replyComment[0]"},{"$ref":"$[0].blog.comments[1].replyComment[0]"},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"我是小哥哥","createTime":1629016164000,"email":"1593376841@qq.com","id":25,"nickname":"刘子归","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"我不是🚺","createTime":1629016199000,"email":"1693376841@qq.com","id":26,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.comments[4]"},"replyComment":[]}]},{"$ref":"$[0].blog.comments[4].replyComment[0]"},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"顶顶顶顶","createTime":1629016740000,"email":"1693376841@qq.com","id":27,"nickname":"冯艇钧","replyComment":[]}],"content":"## 1111\r\n\r\nsssssdsfdd","description":"测试下博客内容","firstPicture":"https://unsplash.it/800/450?image=1000","flag":"翻译","id":16,"published":false,"recommend":true,"shareStatement":true,"tags":[{"blogs":[{"$ref":"$[0].blog"}],"id":6,"name":"Mybatis"}],"title":"我有一个梦想","type":{"blogs":[{"$ref":"$[0].blog"}],"id":3,"name":"Java"},"updateTime":1628937922000,"user":{"avatar":"https://unsplash.it/60/60?image=1005","blogs":[{"appreciation":true,"commentabled":true,"comments":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"我也爱你","createTime":1628999385000,"email":"16****@qq.com","id":17,"nickname":"小明","replyComment":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"舔狗滚蛋！","createTime":1629000884000,"email":"16****@qq.com","id":19,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.user.blogs[0].comments[0]"},"replyComment":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"你骂人啊你！","createTime":1629003144000,"email":"16****@qq.com","id":20,"nickname":"小明","parentComment":{"$ref":"$[0].blog.user.blogs[0].comments[0].replyComment[0]"},"replyComment":[]}]}]},{"$ref":"$[0].blog.user.blogs[0].comments[0].replyComment[0]"},{"$ref":"$[0].blog.user.blogs[0].comments[0].replyComment[0].replyComment[0]"},{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"呵呵哒","createTime":1629003174000,"email":"16****@qq.com","id":21,"nickname":"小黄","replyComment":[]}],"content":"## 七夕快乐","description":"测试实施","firstPicture":"https://unsplash.it/800/450?image=1005","flag":"原创","id":15,"published":true,"recommend":true,"shareStatement":true,"tags":[{"blogs":[{"$ref":"$[0].blog.user.blogs[0]"}],"id":8,"name":"RabbitMQ"}],"title":"我爱你","type":{"blogs":[{"$ref":"$[0].blog.user.blogs[0]"}],"id":1,"name":"SpringBoot"},"updateTime":1628937975000,"user":{"$ref":"$[0].blog.user"},"views":1},{"$ref":"$[0].blog"}],"createTime":1628322522000,"email":"1693376841@qq.com","id":1,"nickname":"冯艇钧","password":"e10adc3949ba59abbe56e057f20f883e","type":1,"updateTime":1628322546000,"username":"fengtingjun"},"views":8},"content":"我也有一个梦想","createTime":1629000093000,"email":"16111@qq.com","id":18,"nickname":"小红","replyComment":[{"$ref":"$[0].blog.comments[0].replyComment[0]"}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"有梦想谁都了不起","createTime":1629015079000,"email":"1693376841@qq.com","id":22,"nickname":"冯艇钧","replyComment":[{"$ref":"$[0].blog.comments[1].replyComment[0]"}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"我是小哥哥","createTime":1629016164000,"email":"1593376841@qq.com","id":25,"nickname":"刘子归","replyComment":[{"$ref":"$[0].blog.comments[4].replyComment[0]"}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"顶顶顶顶","createTime":1629016740000,"email":"1693376841@qq.com","id":27,"nickname":"冯艇钧","replyComment":[]}]
-2021-08-15 16:39:00.397  INFO 2724 --- [http-nio-8080-exec-7] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 16:39:00.397  INFO 2724 --- [http-nio-8080-exec-7] com.ftj.aspect.LogAspect                 : Result : blog :: commentList
-2021-08-15 16:39:53.081  INFO 2724 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/blog/16', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.blog', args=[16, {}]}
-2021-08-15 16:39:53.090  INFO 2724 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 16:39:53.091  INFO 2724 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : Result : blog
-2021-08-15 16:39:53.608  INFO 2724 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/comments/16', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.CommentController.comments', args=[16, {}]}
-2021-08-15 16:39:53.663  INFO 2724 --- [http-nio-8080-exec-10] com.ftj.web.CommentController            : commentList=[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"appreciation":false,"commentabled":false,"comments":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog"},"content":"我也有一个梦想","createTime":1629000093000,"email":"16111@qq.com","id":18,"nickname":"小红","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"有梦想谁都了不起哦","createTime":1629015114000,"email":"1693376841@qq.com","id":23,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.comments[0]"},"replyComment":[]}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"有梦想谁都了不起","createTime":1629015079000,"email":"1693376841@qq.com","id":22,"nickname":"冯艇钧","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"💪","createTime":1629016148000,"email":"1693376841@qq.com","id":24,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.comments[1]"},"replyComment":[]}]},{"$ref":"$[0].blog.comments[0].replyComment[0]"},{"$ref":"$[0].blog.comments[1].replyComment[0]"},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"我是小哥哥","createTime":1629016164000,"email":"1593376841@qq.com","id":25,"nickname":"刘子归","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"我不是🚺","createTime":1629016199000,"email":"1693376841@qq.com","id":26,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.comments[4]"},"replyComment":[]}]},{"$ref":"$[0].blog.comments[4].replyComment[0]"},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"顶顶顶顶","createTime":1629016740000,"email":"1693376841@qq.com","id":27,"nickname":"冯艇钧","replyComment":[]}],"content":"## 1111\r\n\r\nsssssdsfdd","description":"测试下博客内容","firstPicture":"https://unsplash.it/800/450?image=1000","flag":"翻译","id":16,"published":false,"recommend":true,"shareStatement":true,"tags":[{"blogs":[{"$ref":"$[0].blog"}],"id":6,"name":"Mybatis"}],"title":"我有一个梦想","type":{"blogs":[{"$ref":"$[0].blog"}],"id":3,"name":"Java"},"updateTime":1628937922000,"user":{"avatar":"https://unsplash.it/60/60?image=1005","blogs":[{"appreciation":true,"commentabled":true,"comments":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"我也爱你","createTime":1628999385000,"email":"16****@qq.com","id":17,"nickname":"小明","replyComment":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"舔狗滚蛋！","createTime":1629000884000,"email":"16****@qq.com","id":19,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.user.blogs[0].comments[0]"},"replyComment":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"你骂人啊你！","createTime":1629003144000,"email":"16****@qq.com","id":20,"nickname":"小明","parentComment":{"$ref":"$[0].blog.user.blogs[0].comments[0].replyComment[0]"},"replyComment":[]}]}]},{"$ref":"$[0].blog.user.blogs[0].comments[0].replyComment[0]"},{"$ref":"$[0].blog.user.blogs[0].comments[0].replyComment[0].replyComment[0]"},{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"呵呵哒","createTime":1629003174000,"email":"16****@qq.com","id":21,"nickname":"小黄","replyComment":[]}],"content":"## 七夕快乐","description":"测试实施","firstPicture":"https://unsplash.it/800/450?image=1005","flag":"原创","id":15,"published":true,"recommend":true,"shareStatement":true,"tags":[{"blogs":[{"$ref":"$[0].blog.user.blogs[0]"}],"id":8,"name":"RabbitMQ"}],"title":"我爱你","type":{"blogs":[{"$ref":"$[0].blog.user.blogs[0]"}],"id":1,"name":"SpringBoot"},"updateTime":1628937975000,"user":{"$ref":"$[0].blog.user"},"views":1},{"$ref":"$[0].blog"}],"createTime":1628322522000,"email":"1693376841@qq.com","id":1,"nickname":"冯艇钧","password":"e10adc3949ba59abbe56e057f20f883e","type":1,"updateTime":1628322546000,"username":"fengtingjun"},"views":9},"content":"我也有一个梦想","createTime":1629000093000,"email":"16111@qq.com","id":18,"nickname":"小红","replyComment":[{"$ref":"$[0].blog.comments[0].replyComment[0]"}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"有梦想谁都了不起","createTime":1629015079000,"email":"1693376841@qq.com","id":22,"nickname":"冯艇钧","replyComment":[{"$ref":"$[0].blog.comments[1].replyComment[0]"}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"我是小哥哥","createTime":1629016164000,"email":"1593376841@qq.com","id":25,"nickname":"刘子归","replyComment":[{"$ref":"$[0].blog.comments[4].replyComment[0]"}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"顶顶顶顶","createTime":1629016740000,"email":"1693376841@qq.com","id":27,"nickname":"冯艇钧","replyComment":[]}]
-2021-08-15 16:39:53.663  INFO 2724 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 16:39:53.663  INFO 2724 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : Result : blog :: commentList
-2021-08-15 16:40:24.492  INFO 2724 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/blog/16', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.blog', args=[16, {}]}
-2021-08-15 16:40:24.506  INFO 2724 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 16:40:24.507  INFO 2724 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Result : blog
-2021-08-15 16:40:25.898  INFO 2724 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/comments/16', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.CommentController.comments', args=[16, {}]}
-2021-08-15 16:40:25.984  INFO 2724 --- [http-nio-8080-exec-9] com.ftj.web.CommentController            : commentList=[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"appreciation":false,"commentabled":false,"comments":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog"},"content":"我也有一个梦想","createTime":1629000093000,"email":"16111@qq.com","id":18,"nickname":"小红","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"有梦想谁都了不起哦","createTime":1629015114000,"email":"1693376841@qq.com","id":23,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.comments[0]"},"replyComment":[]}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"有梦想谁都了不起","createTime":1629015079000,"email":"1693376841@qq.com","id":22,"nickname":"冯艇钧","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"💪","createTime":1629016148000,"email":"1693376841@qq.com","id":24,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.comments[1]"},"replyComment":[]}]},{"$ref":"$[0].blog.comments[0].replyComment[0]"},{"$ref":"$[0].blog.comments[1].replyComment[0]"},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"我是小哥哥","createTime":1629016164000,"email":"1593376841@qq.com","id":25,"nickname":"刘子归","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"我不是🚺","createTime":1629016199000,"email":"1693376841@qq.com","id":26,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.comments[4]"},"replyComment":[]}]},{"$ref":"$[0].blog.comments[4].replyComment[0]"},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"顶顶顶顶","createTime":1629016740000,"email":"1693376841@qq.com","id":27,"nickname":"冯艇钧","replyComment":[]}],"content":"## 1111\r\n\r\nsssssdsfdd","description":"测试下博客内容","firstPicture":"https://unsplash.it/800/450?image=1000","flag":"翻译","id":16,"published":false,"recommend":true,"shareStatement":true,"tags":[{"blogs":[{"$ref":"$[0].blog"}],"id":6,"name":"Mybatis"}],"title":"我有一个梦想","type":{"blogs":[{"$ref":"$[0].blog"}],"id":3,"name":"Java"},"updateTime":1628937922000,"user":{"avatar":"https://unsplash.it/60/60?image=1005","blogs":[{"appreciation":true,"commentabled":true,"comments":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"我也爱你","createTime":1628999385000,"email":"16****@qq.com","id":17,"nickname":"小明","replyComment":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"舔狗滚蛋！","createTime":1629000884000,"email":"16****@qq.com","id":19,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.user.blogs[0].comments[0]"},"replyComment":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"你骂人啊你！","createTime":1629003144000,"email":"16****@qq.com","id":20,"nickname":"小明","parentComment":{"$ref":"$[0].blog.user.blogs[0].comments[0].replyComment[0]"},"replyComment":[]}]}]},{"$ref":"$[0].blog.user.blogs[0].comments[0].replyComment[0]"},{"$ref":"$[0].blog.user.blogs[0].comments[0].replyComment[0].replyComment[0]"},{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"呵呵哒","createTime":1629003174000,"email":"16****@qq.com","id":21,"nickname":"小黄","replyComment":[]}],"content":"## 七夕快乐","description":"测试实施","firstPicture":"https://unsplash.it/800/450?image=1005","flag":"原创","id":15,"published":true,"recommend":true,"shareStatement":true,"tags":[{"blogs":[{"$ref":"$[0].blog.user.blogs[0]"}],"id":8,"name":"RabbitMQ"}],"title":"我爱你","type":{"blogs":[{"$ref":"$[0].blog.user.blogs[0]"}],"id":1,"name":"SpringBoot"},"updateTime":1628937975000,"user":{"$ref":"$[0].blog.user"},"views":1},{"$ref":"$[0].blog"}],"createTime":1628322522000,"email":"1693376841@qq.com","id":1,"nickname":"冯艇钧","password":"e10adc3949ba59abbe56e057f20f883e","type":1,"updateTime":1628322546000,"username":"fengtingjun"},"views":10},"content":"我也有一个梦想","createTime":1629000093000,"email":"16111@qq.com","id":18,"nickname":"小红","replyComment":[{"$ref":"$[0].blog.comments[0].replyComment[0]"}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"有梦想谁都了不起","createTime":1629015079000,"email":"1693376841@qq.com","id":22,"nickname":"冯艇钧","replyComment":[{"$ref":"$[0].blog.comments[1].replyComment[0]"}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"我是小哥哥","createTime":1629016164000,"email":"1593376841@qq.com","id":25,"nickname":"刘子归","replyComment":[{"$ref":"$[0].blog.comments[4].replyComment[0]"}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"顶顶顶顶","createTime":1629016740000,"email":"1693376841@qq.com","id":27,"nickname":"冯艇钧","replyComment":[]}]
-2021-08-15 16:40:25.985  INFO 2724 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 16:40:25.985  INFO 2724 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : Result : blog :: commentList
-2021-08-15 16:41:20.613  INFO 11356 --- [restartedMain] com.ftj.BlogApplication                  : Starting BlogApplication on LAPTOP-8OTNEP4V with PID 11356 (started by ftj in D:\jetbrains\IntelliJ IDEA 2020.1\workspace\blog)
-2021-08-15 16:41:20.629 DEBUG 11356 --- [restartedMain] com.ftj.BlogApplication                  : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2021-08-15 16:41:20.629  INFO 11356 --- [restartedMain] com.ftj.BlogApplication                  : The following profiles are active: dev
-2021-08-15 16:41:20.738  INFO 11356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-08-15 16:41:20.738  INFO 11356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-08-15 16:41:21.925  INFO 11356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2021-08-15 16:41:22.113  INFO 11356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 172ms. Found 5 repository interfaces.
-2021-08-15 16:41:22.347  WARN 11356 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ftj]' package. Please check your configuration.
-2021-08-15 16:41:22.831  INFO 11356 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e0cd15ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-08-15 16:41:25.499  INFO 11356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-08-15 16:41:25.562  INFO 11356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-08-15 16:41:25.562  INFO 11356 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2021-08-15 16:41:25.578  INFO 11356 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2021-08-15 16:41:25.578  INFO 11356 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2021-08-15 16:41:25.578  INFO 11356 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-08-15 16:41:25.593  INFO 11356 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2021-08-15 16:41:25.890  INFO 11356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-08-15 16:41:25.890  INFO 11356 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5152 ms
-2021-08-15 16:41:26.202  INFO 11356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-08-15 16:41:26.890  INFO 11356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-08-15 16:41:26.983  INFO 11356 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2021-08-15 22:16:24.569  INFO 13844 --- [restartedMain] com.ftj.BlogApplication                  : Starting BlogApplication on LAPTOP-8OTNEP4V with PID 13844 (started by ftj in D:\jetbrains\IntelliJ IDEA 2020.1\workspace\blog)
+2021-08-15 22:16:24.569 DEBUG 13844 --- [restartedMain] com.ftj.BlogApplication                  : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-08-15 22:16:24.569  INFO 13844 --- [restartedMain] com.ftj.BlogApplication                  : The following profiles are active: dev
+2021-08-15 22:16:24.647  INFO 13844 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-15 22:16:24.647  INFO 13844 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-15 22:16:25.365  INFO 13844 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-15 22:16:25.444  INFO 13844 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79ms. Found 5 repository interfaces.
+2021-08-15 22:16:25.537  WARN 13844 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ftj]' package. Please check your configuration.
+2021-08-15 22:16:25.725  INFO 13844 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eee857ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-15 22:16:26.115  INFO 13844 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-15 22:16:26.131  INFO 13844 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-15 22:16:26.131  INFO 13844 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-15 22:16:26.131  INFO 13844 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2021-08-15 22:16:26.131  INFO 13844 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-08-15 22:16:26.131  INFO 13844 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-08-15 22:16:26.147  INFO 13844 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2021-08-15 22:16:26.271  INFO 13844 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-15 22:16:26.271  INFO 13844 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1624 ms
+2021-08-15 22:16:26.396  INFO 13844 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-15 22:16:26.725  INFO 13844 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-15 22:16:26.756  INFO 13844 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2021-08-15 16:41:27.077  INFO 11356 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2021-08-15 16:41:27.077  INFO 11356 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2021-08-15 16:41:27.296  INFO 11356 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2021-08-15 16:41:27.515  INFO 11356 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2021-08-15 16:41:29.124  INFO 11356 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-08-15 16:41:29.202  INFO 11356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-08-15 16:41:29.592  INFO 11356 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2021-08-15 16:41:30.674  INFO 11356 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-08-15 16:41:30.737  WARN 11356 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-08-15 16:41:30.985  INFO 11356 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2021-08-15 16:41:31.313  INFO 11356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-15 16:41:31.313  INFO 11356 --- [restartedMain] com.ftj.BlogApplication                  : Started BlogApplication in 11.544 seconds (JVM running for 13.105)
-2021-08-15 17:16:28.229  INFO 15364 --- [restartedMain] com.ftj.BlogApplication                  : Starting BlogApplication on LAPTOP-8OTNEP4V with PID 15364 (started by ftj in D:\jetbrains\IntelliJ IDEA 2020.1\workspace\blog)
-2021-08-15 17:16:28.245 DEBUG 15364 --- [restartedMain] com.ftj.BlogApplication                  : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2021-08-15 17:16:28.245  INFO 15364 --- [restartedMain] com.ftj.BlogApplication                  : The following profiles are active: dev
-2021-08-15 17:16:28.354  INFO 15364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-08-15 17:16:28.354  INFO 15364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-08-15 17:16:29.229  INFO 15364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2021-08-15 17:16:29.323  INFO 15364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78ms. Found 5 repository interfaces.
-2021-08-15 17:16:29.448  WARN 15364 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ftj]' package. Please check your configuration.
-2021-08-15 17:16:29.713  INFO 15364 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e10adbff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-08-15 17:16:30.229  INFO 15364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-08-15 17:16:30.244  INFO 15364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-08-15 17:16:30.244  INFO 15364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2021-08-15 17:16:30.244  INFO 15364 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2021-08-15 17:16:30.244  INFO 15364 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2021-08-15 17:16:30.244  INFO 15364 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-08-15 17:16:30.244  INFO 15364 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2021-08-15 17:16:30.416  INFO 15364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-08-15 17:16:30.416  INFO 15364 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2062 ms
-2021-08-15 17:16:30.604  INFO 15364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-08-15 17:16:31.057  INFO 15364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-08-15 17:16:31.104  INFO 15364 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2021-08-15 22:16:26.803  INFO 13844 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-08-15 22:16:26.803  INFO 13844 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-08-15 22:16:26.928  INFO 13844 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-08-15 22:16:27.084  INFO 13844 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-15 22:16:28.115  INFO 13844 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-15 22:16:28.162  INFO 13844 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-15 22:16:28.427  INFO 13844 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-08-15 22:16:28.474  WARN 13844 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'blogServiceImpl': Unsatisfied dependency expressed through field 'blogRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.ftj.dao.BlogRepository.findGroupYear()!
+2021-08-15 22:16:28.474  INFO 13844 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-15 22:16:28.474  INFO 13844 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-15 22:16:28.474  INFO 13844 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-15 22:16:28.474  INFO 13844 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-08-15 22:16:28.490  INFO 13844 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-15 22:16:28.490 ERROR 13844 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'blogServiceImpl': Unsatisfied dependency expressed through field 'blogRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.ftj.dao.BlogRepository.findGroupYear()!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.ftj.BlogApplication.main(BlogApplication.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.ftj.dao.BlogRepository.findGroupYear()!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.ftj.dao.BlogRepository.findGroupYear()!
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:93)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:63)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:76)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromQueryAnnotation(JpaQueryFactory.java:56)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:142)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:209)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:79)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lookupQuery(RepositoryFactorySupport.java:566)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(RepositoryFactorySupport.java:559)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1051)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.mapMethodsToQuery(RepositoryFactorySupport.java:561)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$new$0(RepositoryFactorySupport.java:551)
+	at java.util.Optional.map(Optional.java:215)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:551)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:324)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:211)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:121)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 34 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.hibernate.QueryException: No data type for node: org.hibernate.hql.internal.ast.tree.MethodNode 
+ \-[METHOD_CALL] MethodNode: 'function (data_format)'
+    +-[METHOD_NAME] IdentNode: 'data_format' {originalText=data_format}
+    \-[EXPR_LIST] SqlNode: 'exprList'
+       +-[DOT] DotNode: 'blog0_.update_time' {propertyName=updateTime,dereferenceType=PRIMITIVE,getPropertyPath=updateTime,path=b.updateTime,tableAlias=blog0_,className=com.ftj.pojo.Blog,classAlias=b}
+       |  +-[ALIAS_REF] IdentNode: 'blog0_.id' {alias=b, className=com.ftj.pojo.Blog, tableAlias=blog0_}
+       |  \-[IDENT] IdentNode: 'updateTime' {originalText=updateTime}
+       \-[QUOTED_STRING] LiteralNode: ''%Y''
+ [select function('data_format',b.updateTime,'%Y') as year from com.ftj.pojo.Blog b group by function('data_format',b.updateTime,'%Y') order by year desc ]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:138)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:729)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:350)
+	at com.sun.proxy.$Proxy105.createQuery(Unknown Source)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:87)
+	... 63 common frames omitted
+Caused by: org.hibernate.QueryException: No data type for node: org.hibernate.hql.internal.ast.tree.MethodNode 
+ \-[METHOD_CALL] MethodNode: 'function (data_format)'
+    +-[METHOD_NAME] IdentNode: 'data_format' {originalText=data_format}
+    \-[EXPR_LIST] SqlNode: 'exprList'
+       +-[DOT] DotNode: 'blog0_.update_time' {propertyName=updateTime,dereferenceType=PRIMITIVE,getPropertyPath=updateTime,path=b.updateTime,tableAlias=blog0_,className=com.ftj.pojo.Blog,classAlias=b}
+       |  +-[ALIAS_REF] IdentNode: 'blog0_.id' {alias=b, className=com.ftj.pojo.Blog, tableAlias=blog0_}
+       |  \-[IDENT] IdentNode: 'updateTime' {originalText=updateTime}
+       \-[QUOTED_STRING] LiteralNode: ''%Y''
+ [select function('data_format',b.updateTime,'%Y') as year from com.ftj.pojo.Blog b group by function('data_format',b.updateTime,'%Y') order by year desc ]
+	at org.hibernate.QueryException.generateQueryException(QueryException.java:120)
+	at org.hibernate.QueryException.wrapWithQueryString(QueryException.java:103)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:219)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:143)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:119)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:153)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:611)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:720)
+	... 71 common frames omitted
+Caused by: org.hibernate.QueryException: No data type for node: org.hibernate.hql.internal.ast.tree.MethodNode 
+ \-[METHOD_CALL] MethodNode: 'function (data_format)'
+    +-[METHOD_NAME] IdentNode: 'data_format' {originalText=data_format}
+    \-[EXPR_LIST] SqlNode: 'exprList'
+       +-[DOT] DotNode: 'blog0_.update_time' {propertyName=updateTime,dereferenceType=PRIMITIVE,getPropertyPath=updateTime,path=b.updateTime,tableAlias=blog0_,className=com.ftj.pojo.Blog,classAlias=b}
+       |  +-[ALIAS_REF] IdentNode: 'blog0_.id' {alias=b, className=com.ftj.pojo.Blog, tableAlias=blog0_}
+       |  \-[IDENT] IdentNode: 'updateTime' {originalText=updateTime}
+       \-[QUOTED_STRING] LiteralNode: ''%Y''
+
+	at org.hibernate.hql.internal.ast.tree.SelectClause.initializeExplicitSelectClause(SelectClause.java:161)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.useSelectClause(HqlSqlWalker.java:1018)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.processQuery(HqlSqlWalker.java:786)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:677)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:313)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:261)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:271)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:191)
+	... 77 common frames omitted
+
+2021-08-15 22:17:51.671  INFO 10468 --- [restartedMain] com.ftj.BlogApplication                  : Starting BlogApplication on LAPTOP-8OTNEP4V with PID 10468 (started by ftj in D:\jetbrains\IntelliJ IDEA 2020.1\workspace\blog)
+2021-08-15 22:17:51.671 DEBUG 10468 --- [restartedMain] com.ftj.BlogApplication                  : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-08-15 22:17:51.671  INFO 10468 --- [restartedMain] com.ftj.BlogApplication                  : The following profiles are active: dev
+2021-08-15 22:17:51.734  INFO 10468 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-15 22:17:51.734  INFO 10468 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-15 22:17:52.218  INFO 10468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-15 22:17:52.296  INFO 10468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63ms. Found 5 repository interfaces.
+2021-08-15 22:17:52.377  WARN 10468 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ftj]' package. Please check your configuration.
+2021-08-15 22:17:52.549  INFO 10468 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c9221d9f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-15 22:17:52.908  INFO 10468 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-15 22:17:52.923  INFO 10468 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-15 22:17:52.923  INFO 10468 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-15 22:17:52.923  INFO 10468 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2021-08-15 22:17:52.923  INFO 10468 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-08-15 22:17:52.923  INFO 10468 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-08-15 22:17:52.923  INFO 10468 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2021-08-15 22:17:53.048  INFO 10468 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-15 22:17:53.048  INFO 10468 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1314 ms
+2021-08-15 22:17:53.173  INFO 10468 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-15 22:17:53.486  INFO 10468 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-15 22:17:53.517  INFO 10468 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2021-08-15 17:16:31.166  INFO 15364 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2021-08-15 17:16:31.166  INFO 15364 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2021-08-15 17:16:31.291  INFO 15364 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2021-08-15 17:16:31.432  INFO 15364 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2021-08-15 17:16:32.639  INFO 15364 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-08-15 17:16:32.701  INFO 15364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-08-15 17:16:33.030  INFO 15364 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2021-08-15 17:16:33.842  INFO 15364 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-08-15 17:16:33.889  WARN 15364 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-08-15 17:16:34.014  INFO 15364 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2021-08-15 17:16:34.279  INFO 15364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-15 17:16:34.279  INFO 15364 --- [restartedMain] com.ftj.BlogApplication                  : Started BlogApplication in 6.737 seconds (JVM running for 7.724)
-2021-08-15 17:20:18.060  INFO 15364 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-08-15 17:20:18.061  INFO 15364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-08-15 17:20:18.070  INFO 15364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2021-08-15 17:20:18.097  INFO 15364 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
-2021-08-15 17:20:18.177  WARN 15364 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
-2021-08-15 17:20:18.188  WARN 15364 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
-2021-08-15 17:20:18.194  INFO 15364 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:20:18.194  INFO 15364 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Result : index
-2021-08-15 17:20:22.631  INFO 15364 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, -1]}
-2021-08-15 17:20:22.649  INFO 15364 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:20:22.649  INFO 15364 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Result : types
-2021-08-15 17:20:37.424  INFO 15364 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/3', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, 3]}
-2021-08-15 17:20:37.433  INFO 15364 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:20:37.434  INFO 15364 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : Result : types
-2021-08-15 17:20:39.294  INFO 15364 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, 1]}
-2021-08-15 17:20:39.302  INFO 15364 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:20:39.303  INFO 15364 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Result : types
-2021-08-15 17:20:42.801  INFO 15364 --- [http-nio-8080-exec-3] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/3', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, 3]}
-2021-08-15 17:20:42.809  INFO 15364 --- [http-nio-8080-exec-3] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:20:42.809  INFO 15364 --- [http-nio-8080-exec-3] com.ftj.aspect.LogAspect                 : Result : types
-2021-08-15 17:20:43.581  INFO 15364 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/4', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, 4]}
-2021-08-15 17:20:43.587  INFO 15364 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:20:43.587  INFO 15364 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Result : types
-2021-08-15 17:20:44.606  INFO 15364 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/3', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, 3]}
-2021-08-15 17:20:44.613  INFO 15364 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:20:44.613  INFO 15364 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : Result : types
-2021-08-15 17:20:45.478  INFO 15364 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, 1]}
-2021-08-15 17:20:45.484  INFO 15364 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:20:45.484  INFO 15364 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : Result : types
-2021-08-15 17:20:47.402  INFO 15364 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
-2021-08-15 17:20:47.415  INFO 15364 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:20:47.415  INFO 15364 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Result : index
-2021-08-15 17:20:48.821  INFO 15364 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/blog/16', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.blog', args=[16, {}]}
-2021-08-15 17:20:48.881  INFO 15364 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:20:48.881  INFO 15364 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Result : blog
-2021-08-15 17:20:49.394  INFO 15364 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/comments/16', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.CommentController.comments', args=[16, {}]}
-2021-08-15 17:20:49.506  INFO 15364 --- [http-nio-8080-exec-5] com.ftj.web.CommentController            : commentList=[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"appreciation":false,"commentabled":false,"comments":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog"},"content":"我也有一个梦想","createTime":1629000093000,"email":"16111@qq.com","id":18,"nickname":"小红","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"有梦想谁都了不起哦","createTime":1629015114000,"email":"1693376841@qq.com","id":23,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.comments[0]"},"replyComment":[]}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"有梦想谁都了不起","createTime":1629015079000,"email":"1693376841@qq.com","id":22,"nickname":"冯艇钧","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"💪","createTime":1629016148000,"email":"1693376841@qq.com","id":24,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.comments[1]"},"replyComment":[]}]},{"$ref":"$[0].blog.comments[0].replyComment[0]"},{"$ref":"$[0].blog.comments[1].replyComment[0]"},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"我是小哥哥","createTime":1629016164000,"email":"1593376841@qq.com","id":25,"nickname":"刘子归","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"我不是🚺","createTime":1629016199000,"email":"1693376841@qq.com","id":26,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.comments[4]"},"replyComment":[]}]},{"$ref":"$[0].blog.comments[4].replyComment[0]"},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"顶顶顶顶","createTime":1629016740000,"email":"1693376841@qq.com","id":27,"nickname":"冯艇钧","replyComment":[]}],"content":"## 1111\r\n\r\nsssssdsfdd","description":"测试下博客内容","firstPicture":"https://unsplash.it/800/450?image=1000","flag":"翻译","id":16,"published":false,"recommend":true,"shareStatement":true,"tags":[{"blogs":[{"$ref":"$[0].blog"}],"id":6,"name":"Mybatis"}],"title":"我有一个梦想","type":{"blogs":[{"$ref":"$[0].blog"}],"id":3,"name":"Java"},"updateTime":1628937922000,"user":{"avatar":"https://unsplash.it/60/60?image=1005","blogs":[{"appreciation":true,"commentabled":true,"comments":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"我也爱你","createTime":1628999385000,"email":"16****@qq.com","id":17,"nickname":"小明","replyComment":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"舔狗滚蛋！","createTime":1629000884000,"email":"16****@qq.com","id":19,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.user.blogs[0].comments[0]"},"replyComment":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"你骂人啊你！","createTime":1629003144000,"email":"16****@qq.com","id":20,"nickname":"小明","parentComment":{"$ref":"$[0].blog.user.blogs[0].comments[0].replyComment[0]"},"replyComment":[]}]}]},{"$ref":"$[0].blog.user.blogs[0].comments[0].replyComment[0]"},{"$ref":"$[0].blog.user.blogs[0].comments[0].replyComment[0].replyComment[0]"},{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.user.blogs[0]"},"content":"呵呵哒","createTime":1629003174000,"email":"16****@qq.com","id":21,"nickname":"小黄","replyComment":[]}],"content":"## 七夕快乐","description":"测试实施","firstPicture":"https://unsplash.it/800/450?image=1005","flag":"原创","id":15,"published":true,"recommend":true,"shareStatement":true,"tags":[{"blogs":[{"$ref":"$[0].blog.user.blogs[0]"}],"id":8,"name":"RabbitMQ"}],"title":"我爱你","type":{"blogs":[{"$ref":"$[0].blog.user.blogs[0]"}],"id":1,"name":"SpringBoot"},"updateTime":1628937975000,"user":{"$ref":"$[0].blog.user"},"views":1},{"$ref":"$[0].blog"}],"createTime":1628322522000,"email":"1693376841@qq.com","id":1,"nickname":"冯艇钧","password":"e10adc3949ba59abbe56e057f20f883e","type":1,"updateTime":1628322546000,"username":"fengtingjun"},"views":11},"content":"我也有一个梦想","createTime":1629000093000,"email":"16111@qq.com","id":18,"nickname":"小红","replyComment":[{"$ref":"$[0].blog.comments[0].replyComment[0]"}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"有梦想谁都了不起","createTime":1629015079000,"email":"1693376841@qq.com","id":22,"nickname":"冯艇钧","replyComment":[{"$ref":"$[0].blog.comments[1].replyComment[0]"}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"我是小哥哥","createTime":1629016164000,"email":"1593376841@qq.com","id":25,"nickname":"刘子归","replyComment":[{"$ref":"$[0].blog.comments[4].replyComment[0]"}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog"},"content":"顶顶顶顶","createTime":1629016740000,"email":"1693376841@qq.com","id":27,"nickname":"冯艇钧","replyComment":[]}]
-2021-08-15 17:20:49.507  INFO 15364 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:20:49.507  INFO 15364 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : Result : blog :: commentList
-2021-08-15 17:20:51.958  INFO 15364 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, -1]}
-2021-08-15 17:20:51.965  INFO 15364 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:20:51.965  INFO 15364 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Result : types
-2021-08-15 17:20:54.009  INFO 15364 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/3', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, 3]}
-2021-08-15 17:20:54.015  INFO 15364 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:20:54.016  INFO 15364 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : Result : types
-2021-08-15 17:47:10.387  INFO 7928 --- [restartedMain] com.ftj.BlogApplication                  : Starting BlogApplication on LAPTOP-8OTNEP4V with PID 7928 (started by ftj in D:\jetbrains\IntelliJ IDEA 2020.1\workspace\blog)
-2021-08-15 17:47:10.449 DEBUG 7928 --- [restartedMain] com.ftj.BlogApplication                  : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2021-08-15 17:47:10.450  INFO 7928 --- [restartedMain] com.ftj.BlogApplication                  : The following profiles are active: dev
-2021-08-15 17:47:10.524  INFO 7928 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-08-15 17:47:10.525  INFO 7928 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-08-15 17:47:11.573  INFO 7928 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2021-08-15 17:47:11.682  INFO 7928 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100ms. Found 5 repository interfaces.
-2021-08-15 17:47:11.799  WARN 7928 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ftj]' package. Please check your configuration.
-2021-08-15 17:47:12.055  INFO 7928 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e87a3f62] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-08-15 17:47:12.545  INFO 7928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-08-15 17:47:12.565  INFO 7928 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-08-15 17:47:12.566  INFO 7928 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2021-08-15 17:47:12.572  INFO 7928 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2021-08-15 17:47:12.573  INFO 7928 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2021-08-15 17:47:12.573  INFO 7928 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-08-15 17:47:12.576  INFO 7928 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2021-08-15 17:47:12.796  INFO 7928 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-08-15 17:47:12.797  INFO 7928 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2272 ms
-2021-08-15 17:47:13.005  INFO 7928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-08-15 17:47:13.441  INFO 7928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-08-15 17:47:13.496  INFO 7928 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2021-08-15 22:17:53.548  INFO 10468 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-08-15 22:17:53.564  INFO 10468 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-08-15 22:17:53.642  INFO 10468 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-08-15 22:17:53.767  INFO 10468 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-15 22:17:54.721  INFO 10468 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-15 22:17:54.767  INFO 10468 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-15 22:17:55.001  INFO 10468 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-08-15 22:17:55.048  WARN 10468 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'blogServiceImpl': Unsatisfied dependency expressed through field 'blogRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.ftj.dao.BlogRepository.findGroupYear()!
+2021-08-15 22:17:55.048  INFO 10468 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-15 22:17:55.048  INFO 10468 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-15 22:17:55.048  INFO 10468 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-15 22:17:55.048  INFO 10468 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-08-15 22:17:55.064  INFO 10468 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-15 22:17:55.064 ERROR 10468 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'blogServiceImpl': Unsatisfied dependency expressed through field 'blogRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.ftj.dao.BlogRepository.findGroupYear()!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.ftj.BlogApplication.main(BlogApplication.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.ftj.dao.BlogRepository.findGroupYear()!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.ftj.dao.BlogRepository.findGroupYear()!
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:93)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:63)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:76)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromQueryAnnotation(JpaQueryFactory.java:56)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:142)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:209)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:79)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lookupQuery(RepositoryFactorySupport.java:566)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(RepositoryFactorySupport.java:559)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1051)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.mapMethodsToQuery(RepositoryFactorySupport.java:561)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$new$0(RepositoryFactorySupport.java:551)
+	at java.util.Optional.map(Optional.java:215)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:551)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:324)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:211)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:121)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 34 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.hibernate.QueryException: No data type for node: org.hibernate.hql.internal.ast.tree.MethodNode 
+ \-[METHOD_CALL] MethodNode: 'function (data_format)'
+    +-[METHOD_NAME] IdentNode: 'data_format' {originalText=data_format}
+    \-[EXPR_LIST] SqlNode: 'exprList'
+       +-[DOT] DotNode: 'blog0_.update_time' {propertyName=updateTime,dereferenceType=PRIMITIVE,getPropertyPath=updateTime,path=b.updateTime,tableAlias=blog0_,className=com.ftj.pojo.Blog,classAlias=b}
+       |  +-[ALIAS_REF] IdentNode: 'blog0_.id' {alias=b, className=com.ftj.pojo.Blog, tableAlias=blog0_}
+       |  \-[IDENT] IdentNode: 'updateTime' {originalText=updateTime}
+       \-[QUOTED_STRING] LiteralNode: ''%Y''
+ [select function('data_format',b.updateTime,'%Y') as year from com.ftj.pojo.Blog b group by function('data_format',b.updateTime,'%Y') order by year desc ]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:138)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:729)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:350)
+	at com.sun.proxy.$Proxy105.createQuery(Unknown Source)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:87)
+	... 63 common frames omitted
+Caused by: org.hibernate.QueryException: No data type for node: org.hibernate.hql.internal.ast.tree.MethodNode 
+ \-[METHOD_CALL] MethodNode: 'function (data_format)'
+    +-[METHOD_NAME] IdentNode: 'data_format' {originalText=data_format}
+    \-[EXPR_LIST] SqlNode: 'exprList'
+       +-[DOT] DotNode: 'blog0_.update_time' {propertyName=updateTime,dereferenceType=PRIMITIVE,getPropertyPath=updateTime,path=b.updateTime,tableAlias=blog0_,className=com.ftj.pojo.Blog,classAlias=b}
+       |  +-[ALIAS_REF] IdentNode: 'blog0_.id' {alias=b, className=com.ftj.pojo.Blog, tableAlias=blog0_}
+       |  \-[IDENT] IdentNode: 'updateTime' {originalText=updateTime}
+       \-[QUOTED_STRING] LiteralNode: ''%Y''
+ [select function('data_format',b.updateTime,'%Y') as year from com.ftj.pojo.Blog b group by function('data_format',b.updateTime,'%Y') order by year desc ]
+	at org.hibernate.QueryException.generateQueryException(QueryException.java:120)
+	at org.hibernate.QueryException.wrapWithQueryString(QueryException.java:103)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:219)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:143)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:119)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:153)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:611)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:720)
+	... 71 common frames omitted
+Caused by: org.hibernate.QueryException: No data type for node: org.hibernate.hql.internal.ast.tree.MethodNode 
+ \-[METHOD_CALL] MethodNode: 'function (data_format)'
+    +-[METHOD_NAME] IdentNode: 'data_format' {originalText=data_format}
+    \-[EXPR_LIST] SqlNode: 'exprList'
+       +-[DOT] DotNode: 'blog0_.update_time' {propertyName=updateTime,dereferenceType=PRIMITIVE,getPropertyPath=updateTime,path=b.updateTime,tableAlias=blog0_,className=com.ftj.pojo.Blog,classAlias=b}
+       |  +-[ALIAS_REF] IdentNode: 'blog0_.id' {alias=b, className=com.ftj.pojo.Blog, tableAlias=blog0_}
+       |  \-[IDENT] IdentNode: 'updateTime' {originalText=updateTime}
+       \-[QUOTED_STRING] LiteralNode: ''%Y''
+
+	at org.hibernate.hql.internal.ast.tree.SelectClause.initializeExplicitSelectClause(SelectClause.java:161)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.useSelectClause(HqlSqlWalker.java:1018)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.processQuery(HqlSqlWalker.java:786)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:677)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:313)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:261)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:271)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:191)
+	... 77 common frames omitted
+
+2021-08-15 22:19:29.122  INFO 1468 --- [restartedMain] com.ftj.BlogApplication                  : Starting BlogApplication on LAPTOP-8OTNEP4V with PID 1468 (started by ftj in D:\jetbrains\IntelliJ IDEA 2020.1\workspace\blog)
+2021-08-15 22:19:29.138 DEBUG 1468 --- [restartedMain] com.ftj.BlogApplication                  : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-08-15 22:19:29.138  INFO 1468 --- [restartedMain] com.ftj.BlogApplication                  : The following profiles are active: dev
+2021-08-15 22:19:29.200  INFO 1468 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-15 22:19:29.200  INFO 1468 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-15 22:19:29.778  INFO 1468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-15 22:19:29.841  INFO 1468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63ms. Found 5 repository interfaces.
+2021-08-15 22:19:29.935  WARN 1468 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ftj]' package. Please check your configuration.
+2021-08-15 22:19:30.106  INFO 1468 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7e2f5981] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-15 22:19:30.450  INFO 1468 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-15 22:19:30.466  INFO 1468 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-15 22:19:30.466  INFO 1468 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-15 22:19:30.481  INFO 1468 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2021-08-15 22:19:30.481  INFO 1468 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-08-15 22:19:30.481  INFO 1468 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-08-15 22:19:30.481  INFO 1468 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2021-08-15 22:19:30.606  INFO 1468 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-15 22:19:30.606  INFO 1468 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1406 ms
+2021-08-15 22:19:30.731  INFO 1468 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-15 22:19:31.030  INFO 1468 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-15 22:19:31.077  INFO 1468 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2021-08-15 17:47:13.551  INFO 7928 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2021-08-15 17:47:13.553  INFO 7928 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2021-08-15 17:47:13.682  INFO 7928 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2021-08-15 17:47:13.896  INFO 7928 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2021-08-15 17:47:15.038  INFO 7928 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-08-15 17:47:15.097  INFO 7928 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-08-15 17:47:15.435  INFO 7928 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2021-08-15 17:47:16.314  INFO 7928 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-08-15 17:47:16.367  WARN 7928 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-08-15 17:47:16.504  INFO 7928 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2021-08-15 17:47:16.784  INFO 7928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-15 17:47:16.788  INFO 7928 --- [restartedMain] com.ftj.BlogApplication                  : Started BlogApplication in 7.131 seconds (JVM running for 8.598)
-2021-08-15 17:47:16.830  INFO 7928 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-08-15 17:47:16.830  INFO 7928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-08-15 17:47:16.841  INFO 7928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-2021-08-15 17:47:16.875  INFO 7928 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
-2021-08-15 17:47:16.962  WARN 7928 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
-2021-08-15 17:47:16.973  WARN 7928 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
-2021-08-15 17:47:16.980  INFO 7928 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:47:16.980  INFO 7928 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Result : index
-2021-08-15 17:47:47.355  INFO 7928 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
-2021-08-15 17:47:47.375  INFO 7928 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:47:47.376  INFO 7928 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : Result : index
-2021-08-15 17:47:48.523  INFO 7928 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, -1]}
-2021-08-15 17:47:48.540  INFO 7928 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:47:48.540  INFO 7928 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Result : types
-2021-08-15 17:47:50.459  INFO 7928 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/3', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, 3]}
-2021-08-15 17:47:50.467  INFO 7928 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:47:50.467  INFO 7928 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : Result : types
-2021-08-15 17:47:51.772  INFO 7928 --- [http-nio-8080-exec-3] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/4', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, 4]}
-2021-08-15 17:47:51.778  INFO 7928 --- [http-nio-8080-exec-3] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:47:51.778  INFO 7928 --- [http-nio-8080-exec-3] com.ftj.aspect.LogAspect                 : Result : types
-2021-08-15 17:47:52.605  INFO 7928 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, 1]}
-2021-08-15 17:47:52.611  INFO 7928 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:47:52.611  INFO 7928 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : Result : types
-2021-08-15 17:47:57.053  INFO 7928 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tag/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TagShowController.tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, -1]}
-2021-08-15 17:47:57.077  INFO 7928 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:47:57.078  INFO 7928 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Result : tags
-2021-08-15 17:48:02.686  INFO 7928 --- [http-nio-8080-exec-3] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, -1]}
-2021-08-15 17:48:02.695  INFO 7928 --- [http-nio-8080-exec-3] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:48:02.695  INFO 7928 --- [http-nio-8080-exec-3] com.ftj.aspect.LogAspect                 : Result : types
-2021-08-15 17:48:04.409  INFO 7928 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tag/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TagShowController.tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, -1]}
-2021-08-15 17:48:04.417  INFO 7928 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:48:04.417  INFO 7928 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : Result : tags
-2021-08-15 17:48:13.413  INFO 7928 --- [http-nio-8080-exec-4] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, -1]}
-2021-08-15 17:48:13.422  INFO 7928 --- [http-nio-8080-exec-4] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:48:13.422  INFO 7928 --- [http-nio-8080-exec-4] com.ftj.aspect.LogAspect                 : Result : types
-2021-08-15 17:48:13.824  INFO 7928 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tag/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TagShowController.tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, -1]}
-2021-08-15 17:48:13.830  INFO 7928 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:48:13.830  INFO 7928 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Result : tags
-2021-08-15 17:48:47.417  INFO 7928 --- [http-nio-8080-exec-8] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tag/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TagShowController.tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, -1]}
-2021-08-15 17:48:47.428  INFO 7928 --- [http-nio-8080-exec-8] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:48:47.428  INFO 7928 --- [http-nio-8080-exec-8] com.ftj.aspect.LogAspect                 : Result : tags
-2021-08-15 17:48:49.067  INFO 7928 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tag/8', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TagShowController.tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, 8]}
-2021-08-15 17:48:49.081  INFO 7928 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:48:49.081  INFO 7928 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : Result : tags
-2021-08-15 17:48:51.267  INFO 7928 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tag/6', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TagShowController.tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, 6]}
-2021-08-15 17:48:51.279  INFO 7928 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:48:51.279  INFO 7928 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Result : tags
-2021-08-15 17:49:16.763  INFO 7928 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tag/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TagShowController.tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, -1]}
-2021-08-15 17:49:16.769  INFO 7928 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:49:16.770  INFO 7928 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : Result : tags
-2021-08-15 17:49:17.902  INFO 7928 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tag/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TagShowController.tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, -1]}
-2021-08-15 17:49:17.910  INFO 7928 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:49:17.911  INFO 7928 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Result : tags
-2021-08-15 17:49:19.044  INFO 7928 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tag/8', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TagShowController.tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, 8]}
-2021-08-15 17:49:19.052  INFO 7928 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:49:19.052  INFO 7928 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : Result : tags
-2021-08-15 17:49:20.135  INFO 7928 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tag/8', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TagShowController.tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, 8]}
-2021-08-15 17:49:20.141  INFO 7928 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:49:20.141  INFO 7928 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : Result : tags
-2021-08-15 17:49:24.153  INFO 7928 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, -1]}
-2021-08-15 17:49:24.160  INFO 7928 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:49:24.160  INFO 7928 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Result : types
-2021-08-15 17:49:25.431  INFO 7928 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tag/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TagShowController.tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, -1]}
-2021-08-15 17:49:25.437  INFO 7928 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:49:25.437  INFO 7928 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : Result : tags
-2021-08-15 17:49:26.924  INFO 7928 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tag/8', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TagShowController.tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, 8]}
-2021-08-15 17:49:26.934  INFO 7928 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:49:26.934  INFO 7928 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Result : tags
-2021-08-15 17:49:28.204  INFO 7928 --- [http-nio-8080-exec-8] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tag/8', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TagShowController.tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, 8]}
-2021-08-15 17:49:28.214  INFO 7928 --- [http-nio-8080-exec-8] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:49:28.214  INFO 7928 --- [http-nio-8080-exec-8] com.ftj.aspect.LogAspect                 : Result : tags
-2021-08-15 17:49:52.181  INFO 7928 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tag/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TagShowController.tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, -1]}
-2021-08-15 17:49:52.197  INFO 7928 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : --------doAfter--------
-2021-08-15 17:49:52.197  INFO 7928 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : Result : tags
+2021-08-15 22:19:31.108  INFO 1468 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-08-15 22:19:31.108  INFO 1468 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-08-15 22:19:31.186  INFO 1468 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-08-15 22:19:31.311  INFO 1468 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-15 22:19:32.358  INFO 1468 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-15 22:19:32.405  INFO 1468 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-15 22:19:32.655  INFO 1468 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-08-15 22:19:33.311  INFO 1468 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-15 22:19:33.358  WARN 1468 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-15 22:19:33.467  INFO 1468 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-08-15 22:19:33.701  INFO 1468 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-15 22:19:33.701  INFO 1468 --- [restartedMain] com.ftj.BlogApplication                  : Started BlogApplication in 4.985 seconds (JVM running for 5.63)
+2021-08-15 22:19:43.640  INFO 1468 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-15 22:19:43.640  INFO 1468 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-15 22:19:43.654  INFO 1468 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2021-08-15 22:19:43.684  INFO 1468 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2021-08-15 22:19:43.754  WARN 1468 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-08-15 22:19:43.763  WARN 1468 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-08-15 22:19:43.769  INFO 1468 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:19:43.769  INFO 1468 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Result : index
+2021-08-15 22:19:49.560  INFO 1468 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, -1]}
+2021-08-15 22:19:49.576  INFO 1468 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:19:49.576  INFO 1468 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : Result : types
+2021-08-15 22:19:51.039  INFO 1468 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tag/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TagShowController.tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, -1]}
+2021-08-15 22:19:51.063  INFO 1468 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:19:51.063  INFO 1468 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Result : tags
+2021-08-15 22:20:57.521  INFO 1468 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/archives/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.ArchiveShowController.archives', args=[{}]}
+2021-08-15 22:20:57.541  INFO 1468 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:20:57.541  INFO 1468 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Result : archives
+2021-08-15 22:21:07.923  INFO 1468 --- [http-nio-8080-exec-7] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/archives/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.ArchiveShowController.archives', args=[{}]}
+2021-08-15 22:21:07.937  INFO 1468 --- [http-nio-8080-exec-7] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:21:07.938  INFO 1468 --- [http-nio-8080-exec-7] com.ftj.aspect.LogAspect                 : Result : archives
+2021-08-15 22:21:44.278  INFO 1468 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/archives/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.ArchiveShowController.archives', args=[{}]}
+2021-08-15 22:21:44.291  INFO 1468 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:21:44.291  INFO 1468 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Result : archives
+2021-08-15 22:22:53.498  INFO 1468 --- [http-nio-8080-exec-7] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/archives/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.ArchiveShowController.archives', args=[{}]}
+2021-08-15 22:22:53.510  INFO 1468 --- [http-nio-8080-exec-7] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:22:53.510  INFO 1468 --- [http-nio-8080-exec-7] com.ftj.aspect.LogAspect                 : Result : archives
+2021-08-15 22:24:02.852  INFO 16640 --- [restartedMain] com.ftj.BlogApplication                  : Starting BlogApplication on LAPTOP-8OTNEP4V with PID 16640 (started by ftj in D:\jetbrains\IntelliJ IDEA 2020.1\workspace\blog)
+2021-08-15 22:24:02.856 DEBUG 16640 --- [restartedMain] com.ftj.BlogApplication                  : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-08-15 22:24:02.856  INFO 16640 --- [restartedMain] com.ftj.BlogApplication                  : The following profiles are active: dev
+2021-08-15 22:24:02.927  INFO 16640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-15 22:24:02.932  INFO 16640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-15 22:24:03.742  INFO 16640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-15 22:24:03.852  INFO 16640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95ms. Found 5 repository interfaces.
+2021-08-15 22:24:03.963  WARN 16640 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ftj]' package. Please check your configuration.
+2021-08-15 22:24:04.167  INFO 16640 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$860f7fe1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-15 22:24:04.562  INFO 16640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-15 22:24:04.577  INFO 16640 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-15 22:24:04.577  INFO 16640 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-15 22:24:04.582  INFO 16640 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2021-08-15 22:24:04.587  INFO 16640 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-08-15 22:24:04.587  INFO 16640 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-08-15 22:24:04.587  INFO 16640 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2021-08-15 22:24:04.707  INFO 16640 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-15 22:24:04.707  INFO 16640 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1775 ms
+2021-08-15 22:24:04.831  INFO 16640 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-15 22:24:05.131  INFO 16640 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-15 22:24:05.178  INFO 16640 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-08-15 22:24:05.216  INFO 16640 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-08-15 22:24:05.216  INFO 16640 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-08-15 22:24:05.294  INFO 16640 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-08-15 22:24:05.416  INFO 16640 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-15 22:24:06.466  INFO 16640 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-15 22:24:06.519  INFO 16640 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-15 22:24:06.766  INFO 16640 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-08-15 22:24:07.452  INFO 16640 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-15 22:24:07.490  WARN 16640 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-15 22:24:07.603  INFO 16640 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-08-15 22:24:07.855  INFO 16640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-15 22:24:07.858  INFO 16640 --- [restartedMain] com.ftj.BlogApplication                  : Started BlogApplication in 5.516 seconds (JVM running for 6.344)
+2021-08-15 22:24:07.900  INFO 16640 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-15 22:24:07.900  INFO 16640 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-15 22:24:07.914  INFO 16640 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2021-08-15 22:24:07.944  INFO 16640 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2021-08-15 22:24:08.019  WARN 16640 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-08-15 22:24:08.030  WARN 16640 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-08-15 22:24:08.036  INFO 16640 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:24:08.036  INFO 16640 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Result : index
+2021-08-15 22:24:10.445  INFO 16640 --- [http-nio-8080-exec-4] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.ArchiveShowController.archives', args=[{}]}
+2021-08-15 22:24:10.464  INFO 16640 --- [http-nio-8080-exec-4] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:24:10.464  INFO 16640 --- [http-nio-8080-exec-4] com.ftj.aspect.LogAspect                 : Result : archives
+2021-08-15 22:24:11.925  INFO 16640 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='127.0.0.1', classMethod='com.ftj.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2021-08-15 22:24:11.938  INFO 16640 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:24:11.938  INFO 16640 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Result : index
+2021-08-15 22:24:13.454  INFO 16640 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/archives', ip='127.0.0.1', classMethod='com.ftj.web.ArchiveShowController.archives', args=[{}]}
+2021-08-15 22:24:13.467  INFO 16640 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:24:13.468  INFO 16640 --- [http-nio-8080-exec-2] com.ftj.aspect.LogAspect                 : Result : archives
+2021-08-15 22:24:14.705 ERROR 16640 --- [http-nio-8080-exec-1] c.f.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/blog/blog.id, Exception : {}
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "blog.id"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:132)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:126)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "blog.id"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:214)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:693)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:124)
+	... 51 common frames omitted
+
+2021-08-15 22:24:14.706  WARN 16640 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "blog.id"]
+2021-08-15 22:25:31.004  INFO 16640 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tag/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TagShowController.tags', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, -1]}
+2021-08-15 22:25:31.027  INFO 16640 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:25:31.028  INFO 16640 --- [http-nio-8080-exec-5] com.ftj.aspect.LogAspect                 : Result : tags
+2021-08-15 22:25:34.366  INFO 16640 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.ArchiveShowController.archives', args=[{}]}
+2021-08-15 22:25:34.377  INFO 16640 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:25:34.377  INFO 16640 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : Result : archives
+2021-08-15 22:25:35.782  INFO 16640 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/blog/15', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.blog', args=[15, {}]}
+2021-08-15 22:25:35.840  INFO 16640 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:25:35.841  INFO 16640 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : Result : blog
+2021-08-15 22:25:36.398  INFO 16640 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/comments/15', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.CommentController.comments', args=[15, {}]}
+2021-08-15 22:25:36.517  INFO 16640 --- [http-nio-8080-exec-10] com.ftj.web.CommentController            : commentList=[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"appreciation":true,"commentabled":true,"comments":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog"},"content":"我也爱你","createTime":1628999385000,"email":"16****@qq.com","id":17,"nickname":"小明","replyComment":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog"},"content":"舔狗滚蛋！","createTime":1629000884000,"email":"16****@qq.com","id":19,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.comments[0]"},"replyComment":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog"},"content":"你骂人啊你！","createTime":1629003144000,"email":"16****@qq.com","id":20,"nickname":"小明","parentComment":{"$ref":"$[0].blog.comments[0].replyComment[0]"},"replyComment":[]}]}]},{"$ref":"$[0].blog.comments[0].replyComment[0]"},{"$ref":"$[0].blog.comments[0].replyComment[0].replyComment[0]"},{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog"},"content":"呵呵哒","createTime":1629003174000,"email":"16****@qq.com","id":21,"nickname":"小黄","replyComment":[]}],"content":"## 七夕快乐","description":"测试实施","firstPicture":"https://unsplash.it/800/450?image=1005","flag":"原创","id":15,"published":true,"recommend":true,"shareStatement":true,"tags":[{"blogs":[{"$ref":"$[0].blog"},{"appreciation":false,"commentabled":false,"comments":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.tags[0].blogs[1]"},"content":"我也有一个梦想","createTime":1629000093000,"email":"16111@qq.com","id":18,"nickname":"小红","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog.tags[0].blogs[1]"},"content":"有梦想谁都了不起哦","createTime":1629015114000,"email":"1693376841@qq.com","id":23,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.tags[0].blogs[1].comments[0]"},"replyComment":[]}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog.tags[0].blogs[1]"},"content":"有梦想谁都了不起","createTime":1629015079000,"email":"1693376841@qq.com","id":22,"nickname":"冯艇钧","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog.tags[0].blogs[1]"},"content":"💪","createTime":1629016148000,"email":"1693376841@qq.com","id":24,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.tags[0].blogs[1].comments[1]"},"replyComment":[]}]},{"$ref":"$[0].blog.tags[0].blogs[1].comments[0].replyComment[0]"},{"$ref":"$[0].blog.tags[0].blogs[1].comments[1].replyComment[0]"},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog.tags[0].blogs[1]"},"content":"我是小哥哥","createTime":1629016164000,"email":"1593376841@qq.com","id":25,"nickname":"刘子归","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog.tags[0].blogs[1]"},"content":"我不是🚺","createTime":1629016199000,"email":"1693376841@qq.com","id":26,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.tags[0].blogs[1].comments[4]"},"replyComment":[]}]},{"$ref":"$[0].blog.tags[0].blogs[1].comments[4].replyComment[0]"},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog.tags[0].blogs[1]"},"content":"顶顶顶顶","createTime":1629016740000,"email":"1693376841@qq.com","id":27,"nickname":"冯艇钧","replyComment":[]}],"content":"## 1111\r\n\r\nsssssdsfdd","description":"测试下博客内容","firstPicture":"https://unsplash.it/800/450?image=1000","flag":"翻译","id":16,"published":true,"recommend":true,"shareStatement":true,"tags":[{"blogs":[{"$ref":"$[0].blog.tags[0].blogs[1]"}],"id":5,"name":"Spring"},{"blogs":[{"$ref":"$[0].blog.tags[0].blogs[1]"}],"id":6,"name":"Mybatis"},{"$ref":"$[0].blog.tags[0]"}],"title":"我有一个梦想","type":{"blogs":[{"$ref":"$[0].blog.tags[0].blogs[1]"}],"id":3,"name":"Java"},"updateTime":1597485392000,"user":{"avatar":"https://unsplash.it/60/60?image=1005","blogs":[{"$ref":"$[0].blog"},{"$ref":"$[0].blog.tags[0].blogs[1]"}],"createTime":1628322522000,"email":"1693376841@qq.com","id":1,"nickname":"冯艇钧","password":"e10adc3949ba59abbe56e057f20f883e","type":1,"updateTime":1628322546000,"username":"fengtingjun"},"views":12}],"id":8,"name":"RabbitMQ"}],"title":"我爱你","type":{"blogs":[{"$ref":"$[0].blog"}],"id":1,"name":"SpringBoot"},"updateTime":1628937975000,"user":{"$ref":"$[0].blog.tags[0].blogs[1].user"},"views":2},"content":"我也爱你","createTime":1628999385000,"email":"16****@qq.com","id":17,"nickname":"小明","replyComment":[{"$ref":"$[0].blog.comments[0].replyComment[0]"},{"$ref":"$[0].blog.comments[0].replyComment[0].replyComment[0]"}]},{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog"},"content":"呵呵哒","createTime":1629003174000,"email":"16****@qq.com","id":21,"nickname":"小黄","replyComment":[]}]
+2021-08-15 22:25:36.517  INFO 16640 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:25:36.517  INFO 16640 --- [http-nio-8080-exec-10] com.ftj.aspect.LogAspect                 : Result : blog :: commentList
+2021-08-15 22:25:42.322  INFO 16640 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2021-08-15 22:25:42.333  INFO 16640 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:25:42.333  INFO 16640 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : Result : index
+2021-08-15 22:25:43.317  INFO 16640 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.TypeShowController.types', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}, -1]}
+2021-08-15 22:25:43.326  INFO 16640 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:25:43.326  INFO 16640 --- [http-nio-8080-exec-9] com.ftj.aspect.LogAspect                 : Result : types
+2021-08-15 22:25:44.076  INFO 16640 --- [http-nio-8080-exec-4] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.ArchiveShowController.archives', args=[{}]}
+2021-08-15 22:25:44.089  INFO 16640 --- [http-nio-8080-exec-4] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:25:44.089  INFO 16640 --- [http-nio-8080-exec-4] com.ftj.aspect.LogAspect                 : Result : archives
+2021-08-15 22:25:45.426  INFO 16640 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/blog/15', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.IndexController.blog', args=[15, {}]}
+2021-08-15 22:25:45.434  INFO 16640 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:25:45.435  INFO 16640 --- [http-nio-8080-exec-1] com.ftj.aspect.LogAspect                 : Result : blog
+2021-08-15 22:25:45.911  INFO 16640 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/comments/15', ip='0:0:0:0:0:0:0:1', classMethod='com.ftj.web.CommentController.comments', args=[15, {}]}
+2021-08-15 22:25:45.944  INFO 16640 --- [http-nio-8080-exec-6] com.ftj.web.CommentController            : commentList=[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"appreciation":true,"commentabled":true,"comments":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog"},"content":"我也爱你","createTime":1628999385000,"email":"16****@qq.com","id":17,"nickname":"小明","replyComment":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog"},"content":"舔狗滚蛋！","createTime":1629000884000,"email":"16****@qq.com","id":19,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.comments[0]"},"replyComment":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog"},"content":"你骂人啊你！","createTime":1629003144000,"email":"16****@qq.com","id":20,"nickname":"小明","parentComment":{"$ref":"$[0].blog.comments[0].replyComment[0]"},"replyComment":[]}]}]},{"$ref":"$[0].blog.comments[0].replyComment[0]"},{"$ref":"$[0].blog.comments[0].replyComment[0].replyComment[0]"},{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog"},"content":"呵呵哒","createTime":1629003174000,"email":"16****@qq.com","id":21,"nickname":"小黄","replyComment":[]}],"content":"## 七夕快乐","description":"测试实施","firstPicture":"https://unsplash.it/800/450?image=1005","flag":"原创","id":15,"published":true,"recommend":true,"shareStatement":true,"tags":[{"blogs":[{"$ref":"$[0].blog"},{"appreciation":false,"commentabled":false,"comments":[{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog.tags[0].blogs[1]"},"content":"我也有一个梦想","createTime":1629000093000,"email":"16111@qq.com","id":18,"nickname":"小红","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog.tags[0].blogs[1]"},"content":"有梦想谁都了不起哦","createTime":1629015114000,"email":"1693376841@qq.com","id":23,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.tags[0].blogs[1].comments[0]"},"replyComment":[]}]},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog.tags[0].blogs[1]"},"content":"有梦想谁都了不起","createTime":1629015079000,"email":"1693376841@qq.com","id":22,"nickname":"冯艇钧","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog.tags[0].blogs[1]"},"content":"💪","createTime":1629016148000,"email":"1693376841@qq.com","id":24,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.tags[0].blogs[1].comments[1]"},"replyComment":[]}]},{"$ref":"$[0].blog.tags[0].blogs[1].comments[0].replyComment[0]"},{"$ref":"$[0].blog.tags[0].blogs[1].comments[1].replyComment[0]"},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog.tags[0].blogs[1]"},"content":"我是小哥哥","createTime":1629016164000,"email":"1593376841@qq.com","id":25,"nickname":"刘子归","replyComment":[{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog.tags[0].blogs[1]"},"content":"我不是🚺","createTime":1629016199000,"email":"1693376841@qq.com","id":26,"nickname":"冯艇钧","parentComment":{"$ref":"$[0].blog.tags[0].blogs[1].comments[4]"},"replyComment":[]}]},{"$ref":"$[0].blog.tags[0].blogs[1].comments[4].replyComment[0]"},{"adminComment":true,"avatar":"https://unsplash.it/60/60?image=1005","blog":{"$ref":"$[0].blog.tags[0].blogs[1]"},"content":"顶顶顶顶","createTime":1629016740000,"email":"1693376841@qq.com","id":27,"nickname":"冯艇钧","replyComment":[]}],"content":"## 1111\r\n\r\nsssssdsfdd","description":"测试下博客内容","firstPicture":"https://unsplash.it/800/450?image=1000","flag":"翻译","id":16,"published":true,"recommend":true,"shareStatement":true,"tags":[{"blogs":[{"$ref":"$[0].blog.tags[0].blogs[1]"}],"id":5,"name":"Spring"},{"blogs":[{"$ref":"$[0].blog.tags[0].blogs[1]"}],"id":6,"name":"Mybatis"},{"$ref":"$[0].blog.tags[0]"}],"title":"我有一个梦想","type":{"blogs":[{"$ref":"$[0].blog.tags[0].blogs[1]"}],"id":3,"name":"Java"},"updateTime":1597485392000,"user":{"avatar":"https://unsplash.it/60/60?image=1005","blogs":[{"$ref":"$[0].blog"},{"$ref":"$[0].blog.tags[0].blogs[1]"}],"createTime":1628322522000,"email":"1693376841@qq.com","id":1,"nickname":"冯艇钧","password":"e10adc3949ba59abbe56e057f20f883e","type":1,"updateTime":1628322546000,"username":"fengtingjun"},"views":12}],"id":8,"name":"RabbitMQ"}],"title":"我爱你","type":{"blogs":[{"$ref":"$[0].blog"}],"id":1,"name":"SpringBoot"},"updateTime":1628937975000,"user":{"$ref":"$[0].blog.tags[0].blogs[1].user"},"views":3},"content":"我也爱你","createTime":1628999385000,"email":"16****@qq.com","id":17,"nickname":"小明","replyComment":[{"$ref":"$[0].blog.comments[0].replyComment[0]"},{"$ref":"$[0].blog.comments[0].replyComment[0].replyComment[0]"}]},{"adminComment":false,"avatar":"/image/bg/bg1.jpg","blog":{"$ref":"$[0].blog"},"content":"呵呵哒","createTime":1629003174000,"email":"16****@qq.com","id":21,"nickname":"小黄","replyComment":[]}]
+2021-08-15 22:25:45.944  INFO 16640 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : --------doAfter--------
+2021-08-15 22:25:45.944  INFO 16640 --- [http-nio-8080-exec-6] com.ftj.aspect.LogAspect                 : Result : blog :: commentList

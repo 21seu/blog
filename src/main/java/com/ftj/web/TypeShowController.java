@@ -27,7 +27,7 @@ public class TypeShowController {
     @Autowired
     private BlogService blogService;
 
-    @GetMapping("types/{id}")
+    @GetMapping("/types/{id}")
     public String types(@PageableDefault(sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                         Model model,
                         @PathVariable Long id) {

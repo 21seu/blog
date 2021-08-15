@@ -20,12 +20,14 @@
         <div class="ui inverted secondary stackable menu">
             <h2 class="ui teal header item">fengtj</h2>
             <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n == 1} ? ' active'"><i
-                    class="middle home icon"></i>首页</a>
-            <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n == 2} ? 'active'"><i
+                    class="middle home icon"></i><span th:text="#{nav.index}"></span></a>
+            <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide"
+               th:classappend="${n == 2} ? 'active'"><i
                     class="middle idea icon"></i>分类</a>
             <a href="#" th:href="@{/tag/-1}" class="m-item item m-mobile-hide" th:classappend="${n == 3} ? 'active'"><i
                     class="middle tags icon"></i>标签</a>
-            <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${n == 4} ? 'active'"><i
+            <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide"
+               th:classappend="${n == 4} ? 'active'"><i
                     class="middle clone icon"></i>归档</a>
             <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${n == 5} ? 'active'"><i
                     class="middle info icon"></i>关于我</a>
@@ -57,26 +59,27 @@
             </div>
             <div class="three wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
-                <div class="ui inverted link list">
-                    <a href="#" class="item">用户故事（User Story）</a>
-                    <a href="#" class="item">用户故事（User Story）</a>
-                    <a href="#" class="item">用户故事（User Story）</a>
+                <div id="newblog-container">
+                    <div class="ui inverted link list" th:fragment="newblogList">
+                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item"
+                           th:each="blog :${newblogs}" th:text="${blog.title}">用户故事（User Story）</a>
+                    </div>
                 </div>
             </div>
             <div class="three wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
                 <div class="ui inverted link list">
-                    <a href="#" class="item">Email: 1693376841@qq.com</a>
-                    <a href="#" class="item">QQ: 1693376841</a>
+                    <a href="#" class="item" th:text="#{index.email}">Email: 1693376841@qq.com</a>
+                    <a href="#" class="item" th:text="#{index.qq}">QQ: 1693376841</a>
                 </div>
             </div>
             <div class="seven wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced">Bolg</h4>
-                <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客，会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿得人有所帮助...</p>
+                <p class="m-text-thin m-text-spaced m-opacity-mini" th:text="#{index.msg}"></p>
             </div>
         </div>
         <div class="ui inverted section divider"></div>
-        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2020 Fengtingjun Designed by Fengtingjun</p>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny" th:text="#{index.Copyright}"></p>
     </div>
 </footer>
 
@@ -89,6 +92,9 @@
     <script th:src="@{/lib/qrcode/qrcode.min.js}"></script>
     <script th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
     <script th:src="@{/lib/editormd/editormd.min.js}"></script>
+    <script>
+        $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+    </script>
 </th:block>
 
 </body>

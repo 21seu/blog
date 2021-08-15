@@ -3,5 +3,8 @@ spring:
     active: dev
   thymeleaf:
     cache: false
+## 自定义配置取值
+  messages:
+    basename: i18n/messages
 
 comment.avatar: /image/bg/bg1.jpg

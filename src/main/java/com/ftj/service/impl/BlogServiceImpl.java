@@ -5,6 +5,7 @@ import com.ftj.dao.BlogRepository;
 import com.ftj.pojo.Blog;
 import com.ftj.pojo.Type;
 import com.ftj.service.BlogService;
+import com.ftj.util.MarkdownUtils;
 import com.ftj.util.MyBeanUtils;
 import com.ftj.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
@@ -38,6 +39,17 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Blog getBlog(Long id) {
         return blogRepository.getOne(id);
+    }
+
+    @Override
+    public Blog getAndConvert(Long id) {
+        Blog blog = blogRepository.getOne(id);
+        if (blog == null) throw new NotFoundException("该博客不存在");
+        Blog bb = new Blog();
+        BeanUtils.copyProperties(blog, bb);
+        String content = bb.getContent();
+        bb.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+        return bb;
     }
 
     @Override

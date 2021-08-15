@@ -3,3 +3,5 @@ spring:
     active: dev
   thymeleaf:
     cache: false
+
+comment.avatar: /image/bg/bg1.jpg

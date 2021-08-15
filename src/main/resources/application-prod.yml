@@ -12,6 +12,6 @@ logging:
   level: # 日志级别设置
     root: warn
     com.ftj: info
-  file: log/blog-prod.log #日志大小超过10M，默认切分
+  file: /logs/blogs/blog-prod.log #日志大小超过10M，默认切分 我这里部署Linux
 server:
   port: 8081
